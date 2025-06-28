@@ -69,7 +69,7 @@ const Button = ({
         </svg>
       ) : (
         <div className="flex items-center gap-4">
-          <div className="pt-[4px]">{name || children}</div>
+          <div className="pt-[4px] text-14">{name || children}</div>
           {arrowIcon && <img src={ArrowRight} alt="arrow-right" />}
         </div>
       )}
