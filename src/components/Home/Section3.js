@@ -30,10 +30,10 @@ const Section3 = () => {
             Meet the future of <br /> Marine Autonomy
           </h1>
           <div className="mt-[8rem]">
-            <p className="font-obviously_r text-14 leading-[24px] mb-2">
+            <p className="font-obviously_r text-14 leading-[24px] mb-2 text-brand_primary">
               The Compass Surveyor
             </p>
-            <p className="font-redhawk text-[45px] leading-[52px] mb-4">
+            <p className="font-redhawk text-[45px] leading-[52px] mb-4 text-brand_primary">
               Uncrewed Survey Vehicle (USV)
             </p>
             <p className="font-obviously_r text-14 leading-[24px] w-[80%]">
@@ -58,7 +58,9 @@ const Section3 = () => {
           <div>
             {features.map((item, index) => (
               <div className="mb-[2rem]">
-                <p className="font-obviously_r text-[44px]">{item.title}</p>
+                <p className="font-obviously_r text-[44px] text-brand_primary">
+                  {item.title}
+                </p>
                 <p className="font-obviously_r text-14">{item.text}</p>
               </div>
             ))}

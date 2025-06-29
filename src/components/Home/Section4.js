@@ -94,7 +94,7 @@ const Section4 = () => {
             <p className="text-[22px] font-obviously_m leading-[24px] mb-6">
               Our Projects
             </p>
-            <h1 className="font-redhawk text-[45px] leading-[52px]">
+            <h1 className="font-redhawk text-[45px] leading-[52px] text-brand_primary">
               Built on precision. <br />
               Backed by experience.
             </h1>

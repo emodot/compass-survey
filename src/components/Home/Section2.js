@@ -1,10 +1,7 @@
-// import { TypeAnimation } from "react-type-animation";
 import Section2BG from "assets/images/home-sec-2-bg.jpg";
 import Button from "components/Inputs/Button";
-// import Section1BGMobile from "assets/images/home-sec-1-bg-mobile.webp";
-
-import { motion } from "framer-motion";
-import { fadeIn } from "variants.js";
+// import { motion } from "framer-motion";
+// import { fadeIn } from "variants.js";
 import ArrowRight from "assets/icons/arrow-right.svg";
 
 const Section2 = () => {
