@@ -1,4 +1,4 @@
-import Section1BG from "assets/images/home-sec-1-bg.png";
+import Section1BG from "assets/images/home-sec-1-bg.webp";
 import Button from "components/Inputs/Button";
 
 // import { motion } from "framer-motion";

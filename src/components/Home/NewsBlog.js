@@ -1,7 +1,7 @@
 // import { TypeAnimation } from "react-type-animation";
-import Blog1 from "assets/images/temp/blog-1.jpg";
-import Blog2 from "assets/images/temp/blog-2.jpg";
-import Blog3 from "assets/images/temp/blog-3.jpg";
+import Blog1 from "assets/images/temp/blog-1.webp";
+import Blog2 from "assets/images/temp/blog-2.webp";
+import Blog3 from "assets/images/temp/blog-3.webp";
 import Button from "components/Inputs/Button";
 // import Section1BGMobile from "assets/images/home-sec-1-bg-mobile.webp";
 

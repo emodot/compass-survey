@@ -1,5 +1,5 @@
 // import { TypeAnimation } from "react-type-animation";
-import Section4Img from "assets/images/home-sec-4.jpg";
+import Section4Img from "assets/images/home-sec-4.webp";
 import Button from "components/Inputs/Button";
 import { ReactComponent as ActiveNext } from "assets/icons/carousel-next-arrow-active.svg";
 import { ReactComponent as ActivePrev } from "assets/icons/carousel-prev-arrow-active.svg";

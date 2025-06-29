@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Section4Img from "assets/images/home-sec-4.jpg";
-import Section2BG from "assets/images/home-sec-2-bg.jpg";
+import Section4Img from "assets/images/home-sec-4.webp";
+import Section2BG from "assets/images/home-sec-2-bg.webp";
 import { ReactComponent as ActiveNext } from "assets/icons/carousel-next-arrow-active.svg";
 import { ReactComponent as ActivePrev } from "assets/icons/carousel-prev-arrow-active.svg";
 // import { ReactComponent as DisabledNext } from "assets/icons/carousel-next-arrow-disabled.svg";

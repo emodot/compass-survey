@@ -1,11 +1,7 @@
-// import { TypeAnimation } from "react-type-animation";
-import Section1BG from "assets/images/home-sec-1-bg.png";
 import Button from "components/Inputs/Button";
-import Section3Image from "assets/images/home-sec-3-ship.jpg";
-// import Section1BGMobile from "assets/images/home-sec-1-bg-mobile.webp";
-
-import { motion } from "framer-motion";
-import { fadeIn } from "variants.js";
+import Section3Image from "assets/images/home-sec-3-ship.webp";
+// import { motion } from "framer-motion";
+// import { fadeIn } from "variants.js";
 
 const Section3 = () => {
   const features = [
