@@ -7,9 +7,8 @@ import MainLayout from "../layouts/MainLayout";
 // Lazy Loaded Pages
 const Home = lazy(() => import("../pages/home"));
 const AboutUs = lazy(() => import("../pages/about-us"));
+const ContactUs = lazy(() => import("../pages/contact-us"));
 // const FAQ = lazy(() => import("pages/FAQ"));
-// const ContactUs = lazy(() => import("pages/ContactUs"));
-// const AboutUs = lazy(() => import("pages/AboutUs"));
 // const Solutions = lazy(() => import("pages/Solutions"));
 // const PrivacyPolicy = lazy(() => import("pages/PrivacyPolicy"));
 // const CookiesPolicy = lazy(() => import("pages/CookiesPolicy"));
@@ -33,13 +32,13 @@ const router = createBrowserRouter([
         path: "/about-us",
         element: <AboutUs />,
       },
+      {
+        path: "/contact-us",
+        element: <ContactUs />,
+      },
       // {
       //   path: "/faq",
       //   element: <FAQ />,
-      // },
-      // {
-      //   path: "/contact-us",
-      //   element: <ContactUs />,
       // },
       // {
       //   path: "/solutions",

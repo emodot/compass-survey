@@ -1,6 +1,6 @@
-import Twitter from "assets/icons/twitter.svg";
-import Instagram from "assets/icons/instagram.svg";
-import LinkedIn from "assets/icons/linkedin.svg";
+import { ReactComponent as Twitter } from "assets/icons/twitter.svg";
+import { ReactComponent as Instagram } from "assets/icons/instagram.svg";
+import { ReactComponent as LinkedIn } from "assets/icons/linkedin.svg";
 
 import Button from "components/Inputs/Button";
 import { ReactComponent as LogoBlack } from "assets/icons/logo-black.svg";
@@ -65,13 +65,9 @@ const Footer = () => {
             <p className="font-obviously_r text-[12px] leading-[24px] text-brand_primary">
               All rights reserved &copy; 2025
             </p>
-            <img src={Twitter} alt="twitter" className="w-[20px] h-[20px]" />
-            <img
-              src={Instagram}
-              alt="instagram"
-              className="w-[20px] h-[20px]"
-            />
-            <img src={LinkedIn} alt="linkedin" className="w-[20px] h-[20px]" />
+            <Twitter />
+            <Instagram />
+            <LinkedIn />
           </div>
         </div>
       </div>
