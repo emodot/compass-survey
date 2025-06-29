@@ -1,4 +1,4 @@
-import Section2BG from "assets/images/home-sec-2-bg.jpg";
+import Section2BG from "assets/images/home-sec-2-bg.webp";
 import Button from "components/Inputs/Button";
 // import { motion } from "framer-motion";
 // import { fadeIn } from "variants.js";

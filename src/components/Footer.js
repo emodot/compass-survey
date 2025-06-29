@@ -12,60 +12,67 @@ const Footer = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="max-w-[1300px] m-auto">
-      <div className="pt-[7rem] pb-[6rem] grid grid-cols-2">
-        <div>
-          <LogoBlack
-            className="w-[5rem] xl:w-[10.5rem] cursor-pointer mb-6"
-            onClick={() => {
-              navigate("/");
-            }}
-          />
-          <p className="font-obviously_r text-[12px] leading-[24px] mb-6 md:w-[80%]">
-            Compass Survey Limited delivers topographic and offshore positioning
-            services across Nigeria and Africa’s oil and gas industry. Backed by
-            experienced personnel and advanced technology, we provide reliable,
-            on-time solutions that consistently exceed client expectations.
-          </p>
-        </div>
-        <div className="pl-[6rem]">
-          <p className="font-obviously_m text-[18px] leading-[24px] mb-6 text-brand_primary">
-            Want to stay updated with what’s happening at Compass Survey?
-          </p>
-          <p className="font-obviously_r text-[12px] leading-[24px] mb-6">
-            Join our newsletter and be the first to know about our upcoming
-            updates.
-          </p>
-          <div className="flex gap-4">
-            <Button name={"Subscribe"} theme={"secondary"} arrowIcon={true} />
+    <div className="bg-[#F0F0F0]">
+      <div className="max-w-[1300px] m-auto">
+        <div className="pt-[7rem] pb-[6rem] grid grid-cols-2">
+          <div>
+            <LogoBlack
+              className="w-[5rem] xl:w-[10.5rem] cursor-pointer mb-6"
+              onClick={() => {
+                navigate("/");
+              }}
+            />
+            <p className="font-obviously_r text-[12px] leading-[24px] mb-6 md:w-[80%]">
+              Compass Survey Limited delivers topographic and offshore
+              positioning services across Nigeria and Africa’s oil and gas
+              industry. Backed by experienced personnel and advanced technology,
+              we provide reliable, on-time solutions that consistently exceed
+              client expectations.
+            </p>
+          </div>
+          <div className="pl-[6rem]">
+            <p className="font-obviously_m text-[18px] leading-[24px] mb-6 text-brand_primary">
+              Want to stay updated with what’s happening at Compass Survey?
+            </p>
+            <p className="font-obviously_r text-[12px] leading-[24px] mb-6">
+              Join our newsletter and be the first to know about our upcoming
+              updates.
+            </p>
+            <div className="flex gap-4">
+              <Button name={"Subscribe"} theme={"secondary"} arrowIcon={true} />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="border-t border-brand_primary py-[2rem] flex justify-between items-center">
-        <div className="flex justify-between items-center gap-4">
-          <p className="font-obviously_r text-[12px] leading-[24px] text-brand_primary">
-            Projects
-          </p>
-          <div className="rounded-full bg-[#6E6E6E] w-[6px] h-[6px]"></div>
-          <p className="font-obviously_r text-[12px] leading-[24px] text-brand_primary">
-            Services
-          </p>
-          <div className="rounded-full bg-[#6E6E6E] w-[6px] h-[6px]"></div>
-          <p className="font-obviously_r text-[12px] leading-[24px] text-brand_primary">
-            About Us
-          </p>
-          <div className="rounded-full bg-[#6E6E6E] w-[6px] h-[6px]"></div>
-          <p className="font-obviously_r text-[12px] leading-[24px] text-brand_primary">
-            Blog
-          </p>
-        </div>
-        <div className="flex items-center gap-4">
-          <p className="font-obviously_r text-[12px] leading-[24px] text-brand_primary">
-            All rights reserved &copy; 2025
-          </p>
-          <img src={Twitter} alt="twitter" className="w-[20px] h-[20px]" />
-          <img src={Instagram} alt="instagram" className="w-[20px] h-[20px]" />
-          <img src={LinkedIn} alt="linkedin" className="w-[20px] h-[20px]" />
+        <div className="border-t border-brand_primary py-[2rem] flex justify-between items-center">
+          <div className="flex justify-between items-center gap-4">
+            <p className="font-obviously_r text-[12px] leading-[24px] text-brand_primary">
+              Projects
+            </p>
+            <div className="rounded-full bg-[#6E6E6E] w-[6px] h-[6px]"></div>
+            <p className="font-obviously_r text-[12px] leading-[24px] text-brand_primary">
+              Services
+            </p>
+            <div className="rounded-full bg-[#6E6E6E] w-[6px] h-[6px]"></div>
+            <p className="font-obviously_r text-[12px] leading-[24px] text-brand_primary">
+              About Us
+            </p>
+            <div className="rounded-full bg-[#6E6E6E] w-[6px] h-[6px]"></div>
+            <p className="font-obviously_r text-[12px] leading-[24px] text-brand_primary">
+              Blog
+            </p>
+          </div>
+          <div className="flex items-center gap-4">
+            <p className="font-obviously_r text-[12px] leading-[24px] text-brand_primary">
+              All rights reserved &copy; 2025
+            </p>
+            <img src={Twitter} alt="twitter" className="w-[20px] h-[20px]" />
+            <img
+              src={Instagram}
+              alt="instagram"
+              className="w-[20px] h-[20px]"
+            />
+            <img src={LinkedIn} alt="linkedin" className="w-[20px] h-[20px]" />
+          </div>
         </div>
       </div>
     </div>

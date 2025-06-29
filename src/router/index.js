@@ -6,6 +6,7 @@ import MainLayout from "../layouts/MainLayout";
 
 // Lazy Loaded Pages
 const Home = lazy(() => import("../pages/home"));
+const AboutUs = lazy(() => import("../pages/about-us"));
 // const FAQ = lazy(() => import("pages/FAQ"));
 // const ContactUs = lazy(() => import("pages/ContactUs"));
 // const AboutUs = lazy(() => import("pages/AboutUs"));
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         path: "",
         element: <Home />,
       },
+      {
+        path: "/about-us",
+        element: <AboutUs />,
+      },
       // {
       //   path: "/faq",
       //   element: <FAQ />,
@@ -35,10 +40,6 @@ const router = createBrowserRouter([
       // {
       //   path: "/contact-us",
       //   element: <ContactUs />,
-      // },
-      // {
-      //   path: "/about-us",
-      //   element: <AboutUs />,
       // },
       // {
       //   path: "/solutions",
