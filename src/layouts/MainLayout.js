@@ -1,4 +1,4 @@
-// import Footer from "components/Footer";
+import Footer from "components/Footer";
 import Header from "../components/Header";
 // import LoginModal from "components/LoginModal";
 // import MobileMenu from "components/MobileMenu";
@@ -77,7 +77,7 @@ export default function MainLayout() {
         <Suspense fallback={<Spinner />}>
           <Header />
           <Outlet />
-          {/* <Footer /> */}
+          <Footer />
           {/* {isLoginModalOpen && <LoginModal />}
           {isModalOpen && <ScheduleDemo />}
           {isMenuOpen && <MobileMenu />} */}

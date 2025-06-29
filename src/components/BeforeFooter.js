@@ -1,4 +1,3 @@
-import Section1BG from "assets/images/home-sec-1-bg.png";
 import Button from "components/Inputs/Button";
 
 // import { motion } from "framer-motion";
@@ -24,7 +23,7 @@ const BeforeFooter = () => {
           />
         </div>
         <div className="pl-[6rem]">
-          <p className="font-obviously_m text-[22px] leading-[32px] w-[60%] mb-[4rem]">
+          <p className="font-obviously_m text-[22px] leading-[32px] w-[60%] mb-[4rem] text-brand_primary">
             Ready to experience our services in action? Get in Touch with our
             experts today.
           </p>
