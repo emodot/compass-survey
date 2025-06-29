@@ -8,7 +8,7 @@ const ErrorPage = () => {
   const navigate = useNavigate()
   return (
     <div className="bg-[#040F12] min-h-[100vh]">
-      <div className="max-w-[1350px] md:w-[90%] 2xl:w-full m-auto pt-[5rem] xl:pt-[13rem] md:flex justify-between">
+      <div className="max-w-[1300px] md:w-[90%] 2xl:w-full m-auto pt-[5rem] xl:pt-[13rem] md:flex justify-between">
         <div className="md:pt-[3rem] mx-auto w-[90%] md:w-full mb-[4rem] md:m-0 basis-[45%]">
           <motion.h1
             variants={fadeIn("right", 0.2)}
@@ -26,8 +26,8 @@ const ErrorPage = () => {
             viewport={{ once: true, amount: 0.7 }}
             className="text-white font-qanelas_m w-[80%] mt-[1rem] mb-[3rem]"
           >
-            Don't worry, even the best drivers miss a few exits. You're on the
-            right track to improving your skills—let's get you back on the road.
+            The page you are looking for does not exist. Please check the URL
+            and try again.
           </motion.p>
           <motion.div
             variants={fadeIn("right", 0.4)}

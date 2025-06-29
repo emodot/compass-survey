@@ -27,7 +27,7 @@ const Section2 = () => {
   ];
   return (
     <div className="py-[8rem]">
-      <div className="max-w-[1350px] m-auto px-[2rem] pb-[6rem] grid grid-cols-2">
+      <div className="max-w-[1300px] m-auto pb-[6rem] grid grid-cols-2">
         <div>
           <h1 className="font-obviously_m text-[24px] leading-[34px]">
             About Us
@@ -53,7 +53,7 @@ const Section2 = () => {
         </div>
       </div>
       <div
-        className="max-w-[1350px] m-auto w-full p-[40px]"
+        className="max-w-[1300px] m-auto w-full p-[40px]"
         style={{
           // height: "100%",
           width: "100%",
