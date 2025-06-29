@@ -1,5 +1,6 @@
 import React from "react";
-import ArrowRight from "assets/icons/btn-arrow.svg";
+import BtnArrow from "assets/icons/btn-arrow.svg";
+import BtnArrowSecondary from "assets/icons/btn-arrow-sec.svg";
 // import PropTypes from "prop-types";
 
 const Button = ({
@@ -42,6 +43,11 @@ const Button = ({
                     ? "border bg-[#f2f4f700]"
                     : ""
                 }
+                ${
+                  theme === "full_transparent" && !disabled
+                    ? "bg-[#f2f4f700] !p-0"
+                    : ""
+                }
         px-[16px] whitespace-nowrap flex justify-center items-center transition ease-in-out duration-500 rounded-[0px] h-[40px] w-fit text-14 font-obviously_m  ${className}`}
     >
       {loading ? (
@@ -69,8 +75,19 @@ const Button = ({
         </svg>
       ) : (
         <div className="flex items-center gap-4">
-          <div className="pt-[4px] text-14">{name || children}</div>
-          {arrowIcon && <img src={ArrowRight} alt="arrow-right" />}
+          <div
+            className={`pt-[4px] text-14 ${
+              theme === "primary" ? "text-white" : ""
+            }`}
+          >
+            {name || children}
+          </div>
+          {arrowIcon && (
+            <img
+              src={theme === "primary" ? BtnArrowSecondary : theme === "full_transparent" ? BtnArrowSecondary : BtnArrow}
+              alt="arrow-right"
+            />
+          )}
         </div>
       )}
     </button>
