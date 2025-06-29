@@ -101,7 +101,13 @@ const Header = () => {
           ))}
         </div>
         <div className="hidden lg:flex items-center gap-6">
-          <Button name={"Get in Touch"} theme={"secondary"} />
+          <Button
+            name={"Get in Touch"}
+            theme={"secondary"}
+            onClick={() => {
+              navigate("/contact-us");
+            }}
+          />
         </div>
         <div className="lg:hidden">
           <DarkHamburger onClick={() => toggleMenu()} />
