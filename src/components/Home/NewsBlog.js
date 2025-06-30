@@ -1,12 +1,9 @@
-// import { TypeAnimation } from "react-type-animation";
 import Blog1 from "assets/images/temp/blog-1.webp";
 import Blog2 from "assets/images/temp/blog-2.webp";
 import Blog3 from "assets/images/temp/blog-3.webp";
 import Button from "components/Inputs/Button";
-// import Section1BGMobile from "assets/images/home-sec-1-bg-mobile.webp";
-
-import { motion } from "framer-motion";
-import { fadeIn } from "variants.js";
+// import { motion } from "framer-motion";
+// import { fadeIn } from "variants.js";
 
 const NewsBlog = () => {
   const blogs = [

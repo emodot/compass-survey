@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 // import { fadeIn } from "variants.js";
 
 const Header = () => {
-  const { toggleMenu, toggleLoginModal } = useModal();
+  const { toggleMenu } = useModal();
   const menuOptions = [
     {
       name: "Projects",

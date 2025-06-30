@@ -1,5 +1,5 @@
 import TestimonialImage from "assets/images/temp/testimonial-image.webp";
-import Button from "components/Inputs/Button";
+// import Button from "components/Inputs/Button";
 // import { motion } from "framer-motion";
 // import { fadeIn } from "variants.js";
 
