@@ -1,4 +1,4 @@
-import Section1BG from "assets/images/contact-sec-1-bg.webp";
+// import Section1BG from "assets/images/contact-sec-1-bg.webp";
 import { ReactComponent as PhoneIcon } from "assets/icons/phone.svg";
 import { ReactComponent as EmailIcon } from "assets/icons/email.svg";
 import { ReactComponent as LocationIcon } from "assets/icons/location-pin.svg";
