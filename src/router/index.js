@@ -8,6 +8,8 @@ import MainLayout from "../layouts/MainLayout";
 const Home = lazy(() => import("../pages/home"));
 const AboutUs = lazy(() => import("../pages/about-us"));
 const ContactUs = lazy(() => import("../pages/contact-us"));
+const Services = lazy(() => import("../pages/services"));
+const HydrographicPositioningSurvey = lazy(() => import("../pages/services/hydrographic-positioning-survey"));
 // const FAQ = lazy(() => import("pages/FAQ"));
 // const Solutions = lazy(() => import("pages/Solutions"));
 // const PrivacyPolicy = lazy(() => import("pages/PrivacyPolicy"));
@@ -35,6 +37,14 @@ const router = createBrowserRouter([
       {
         path: "/contact-us",
         element: <ContactUs />,
+      },
+      {
+        path: "/services",
+        element: <Services />,
+      },
+      {
+        path: "/services/hydrographic-positioning-survey",
+        element: <HydrographicPositioningSurvey />,
       },
       // {
       //   path: "/faq",

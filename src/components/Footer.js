@@ -1,15 +1,21 @@
 import { ReactComponent as Twitter } from "assets/icons/twitter.svg";
 import { ReactComponent as Instagram } from "assets/icons/instagram.svg";
 import { ReactComponent as LinkedIn } from "assets/icons/linkedin.svg";
-
 import Button from "components/Inputs/Button";
 import { ReactComponent as LogoBlack } from "assets/icons/logo-black.svg";
 import { useNavigate } from "react-router-dom";
+import Input from "./Inputs/Input";
+import { useState } from "react";
 // import { motion } from "framer-motion";
 // import { fadeIn } from "variants.js";
 
 const Footer = () => {
   const navigate = useNavigate();
+  const [emailAddress, setEmailAddress] = useState("");
+
+  const handleChange = (e) => {
+    setEmailAddress(e.target.value);
+  };
 
   return (
     <div className="bg-[#F0F0F0]">
@@ -34,10 +40,20 @@ const Footer = () => {
             <p className="font-obviously_m text-[18px] leading-[24px] mb-6 text-brand_primary">
               Want to stay updated with what’s happening at Compass Survey?
             </p>
-            <p className="font-obviously_r text-[12px] leading-[24px] mb-6">
+            <p className="font-obviously_r text-[12px] leading-[24px] mb-4">
               Join our newsletter and be the first to know about our upcoming
               updates.
             </p>
+            <Input
+              placeholder="Email Address"
+              type="email"
+              id="emailAddress"
+              name="emailAddress"
+              // readOnly={loading}
+              value={emailAddress}
+              onChange={handleChange}
+              showError={false}
+            />
             <div className="flex gap-4">
               <Button name={"Subscribe"} theme={"secondary"} arrowIcon={true} />
             </div>
