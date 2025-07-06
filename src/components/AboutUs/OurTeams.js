@@ -4,6 +4,23 @@ import TestimonialImage from "assets/images/temp/testimonial-image.webp";
 // import { fadeIn } from "variants.js";
 
 const OurTeam = () => {
+  const teamMembers = [
+    {
+      name: "James Okoli",
+      title: "Chief Executive Officer",
+      image: TestimonialImage,
+    },
+    {
+      name: "James Okoli",
+      title: "Chief Executive Officer",
+      image: TestimonialImage,
+    },
+    {
+      name: "James Okoli",
+      title: "Chief Executive Officer",
+      image: TestimonialImage,
+    },
+  ];
   return (
     <div className="py-[8rem] bg-[#F9F8F3]">
       <div className="max-w-[1300px] m-auto">
@@ -24,15 +41,27 @@ const OurTeam = () => {
           </div>
         </div>
         <div className="grid grid-cols-3 gap-6 w-full">
-          <div className="col-span-1">
-            <img src={TestimonialImage} alt="testimonial" />
-          </div>
-          <div className="col-span-1">
-            <img src={TestimonialImage} alt="testimonial" />
-          </div>
-          <div className="col-span-1">
-            <img src={TestimonialImage} alt="testimonial" />
-          </div>
+          {teamMembers.map((member, index) => (
+            <div
+              key={index}
+              className="col-span-1 p-[2rem] h-[500px] flex items-end"
+              style={{
+                backgroundImage: `url(${member.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <div className="bg-[#ffffffdb] px-6 py-6 w-full">
+                <p className="font-obviously_m text-[17px] leading-[24px] mb-1 text-center">
+                  {member.name}
+                </p>
+                <p className="font-obviously_r text-[14px] leading-[24px] text-center">
+                  {member.title}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
