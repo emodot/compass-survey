@@ -18,13 +18,13 @@ const Section2 = () => {
       title: "High Resolution Geophysical Site Survey",
       text: "We map the unseen. Our high-resolution geophysical surveys offer full visibility into seabed and sub-seafloor conditions—supporting safer infrastructure, better design, and smarter decisions.",
       image: Services2,
-      link: "/services/high-resolution-geophysical-site-survey",
+      link: "/services/high-resolution-geophysical-survey",
     },
     {
       title: "Geotechnical Site Investigation",
       text: "Our geotechnical services offer insight into the strength, structure, and stability of seabed soils, providing critical data on soil composition and strength for the safe design of offshore and coastal structures.",
       image: Services3,
-      link: "/services/geotechnical-site-investigation",
+      link: "/services/geotechnical-site-investigations",
     },
   ];
   return (
