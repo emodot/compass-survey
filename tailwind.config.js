@@ -29,7 +29,8 @@ module.exports = {
       neutral_stroke_1: "#DFE2E2",
       neutral_disabled: "#F2F3F3",
       neutral_stroke_2: "#ECEEEE",
-      border_stroke_1: "#D4D4D4",
+      border_stroke_1: "#000000",
+      border_stroke_2: "#6E6E6E",
     },
     fontSize: {
       6: "0.375rem",

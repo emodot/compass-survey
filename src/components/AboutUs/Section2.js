@@ -41,7 +41,7 @@ const Section2 = () => {
               Our Story
             </h1>
             <h2 className="font-redhawk text-[32px] leading-[40px] text-brand_primary mb-[3rem]">
-              Charting New Paths, <br /> Solving Real Problems
+              Charting New Paths, <br /> Solving Real Problems.
             </h2>
             <img
               src={Section2BG}

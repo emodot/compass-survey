@@ -91,15 +91,16 @@ const ClientsServed = () => {
         <Carousel
           additionalTransfrom={0}
           arrows={false}
+          autoPlay={true}
           autoPlaySpeed={3000}
           centerMode={false}
           className=""
-          containerClass="container-padding-bottom"
+          containerClass="container"
           customButtonGroup={<CustomButtonGroupAsArrows />}
           dotListClass=""
           draggable
           focusOnSelect={false}
-          infinite={false}
+          infinite
           itemClass=""
           keyBoardControl
           minimumTouchDrag={80}
@@ -112,18 +113,14 @@ const ClientsServed = () => {
           rewindWithAnimation={false}
           rtl={false}
           shouldResetAutoplay
-          showDots={true}
+          showDots={false}
           sliderClass=""
           slidesToSlide={1}
           swipeable
         >
           {clientList.map((item, index) => (
             <div key={index} className="pt-[3rem] pb-[6rem] px-[1rem]">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-[100px]"
-              />
+              <img src={item.image} alt={item.title} className="w-[100px]" />
             </div>
           ))}
         </Carousel>
