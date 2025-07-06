@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import BeforeFooter from "components/BeforeFooter";
 import OurTeam from "components/AboutUs/OurTeams.js";
 import ClientsServed from "components/ClientsServed";
+import Section3 from "components/AboutUs/Section3";
 
 const AboutUs = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const AboutUs = () => {
       />
       <Section1 />
       <Section2 />
+      <Section3 />
       <ClientsServed />
       <OurTeam />
       <BeforeFooter />

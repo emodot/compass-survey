@@ -17,6 +17,25 @@ const Footer = () => {
     setEmailAddress(e.target.value);
   };
 
+    const menuOptions = [
+      {
+        name: "Projects",
+        link: "/projects",
+      },
+      {
+        name: "Services",
+        link: "/services",
+      },
+      {
+        name: "About us",
+        link: "/about-us",
+      },
+      {
+        name: "Blog",
+        link: "/blog",
+      },
+    ];
+
   return (
     <div className="bg-[#F0F0F0]">
       <div className="max-w-[1300px] m-auto">
@@ -61,21 +80,18 @@ const Footer = () => {
         </div>
         <div className="border-t border-brand_primary py-[2rem] flex justify-between items-center">
           <div className="flex justify-between items-center gap-4">
-            <p className="font-obviously_r text-[12px] leading-[24px] text-brand_primary">
-              Projects
-            </p>
-            <div className="rounded-full bg-[#6E6E6E] w-[6px] h-[6px]"></div>
-            <p className="font-obviously_r text-[12px] leading-[24px] text-brand_primary">
-              Services
-            </p>
-            <div className="rounded-full bg-[#6E6E6E] w-[6px] h-[6px]"></div>
-            <p className="font-obviously_r text-[12px] leading-[24px] text-brand_primary">
-              About Us
-            </p>
-            <div className="rounded-full bg-[#6E6E6E] w-[6px] h-[6px]"></div>
-            <p className="font-obviously_r text-[12px] leading-[24px] text-brand_primary">
-              Blog
-            </p>
+            {menuOptions.map((item, index) => (
+              <>
+                <p className="font-obviously_r text-[12px] leading-[24px] text-brand_primary cursor-pointer" onClick={() => {
+                  navigate(item.link);
+                }}>
+                  {item.name}
+                </p>
+                {index !== menuOptions.length - 1 && (
+                  <div className="rounded-full bg-[#6E6E6E] w-[6px] h-[6px]"></div>
+                )}
+              </>
+            ))}
           </div>
           <div className="flex items-center gap-4">
             <p className="font-obviously_r text-[12px] leading-[24px] text-brand_primary">
