@@ -1,10 +1,12 @@
 import Section2BG from "assets/images/home-sec-2-bg.webp";
 import Button from "components/Inputs/Button";
+import ArrowRight from "assets/icons/arrow-right.svg";
+import { useNavigate } from "react-router-dom";
 // import { motion } from "framer-motion";
 // import { fadeIn } from "variants.js";
-import ArrowRight from "assets/icons/arrow-right.svg";
 
 const Section2 = () => {
+  const navigate = useNavigate();
   const whatWeDo = [
     {
       title: "Hydrographic & Positioning Survey",
@@ -46,7 +48,7 @@ const Section2 = () => {
           </p>
         </div>
         <div className="flex flex-col justify-end h-full w-full">
-          <Button name={"Learn More"} theme={"secondary"} arrowIcon={true} />
+          <Button name={"Learn More"} theme={"secondary"} arrowIcon={true} onClick={() => navigate("/projects")} />
         </div>
       </div>
       <div

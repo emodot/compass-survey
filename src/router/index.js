@@ -12,8 +12,9 @@ const Services = lazy(() => import("../pages/services"));
 const HydrographicPositioningSurvey = lazy(() => import("../pages/services/hydrographic-positioning-survey"));
 const HighResolutionGeophysicalSurvey = lazy(() => import("../pages/services/high-resolution-geophysical-survey"));
 const GeotechnicalSiteInvestigations = lazy(() => import("../pages/services/geotechnical-site-investigations"));
+const Projects = lazy(() => import("../pages/projects"));
+const Blog = lazy(() => import("../pages/blog"));
 // const FAQ = lazy(() => import("pages/FAQ"));
-// const Solutions = lazy(() => import("pages/Solutions"));
 // const PrivacyPolicy = lazy(() => import("pages/PrivacyPolicy"));
 // const CookiesPolicy = lazy(() => import("pages/CookiesPolicy"));
 // const TermsAndConditions = lazy(() => import("pages/TermsAndConditions"));
@@ -55,6 +56,14 @@ const router = createBrowserRouter([
       {
         path: "/services/geotechnical-site-investigations",
         element: <GeotechnicalSiteInvestigations />,
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
       },
       // {
       //   path: "/faq",
