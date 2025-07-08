@@ -35,7 +35,7 @@ const Section2 = () => {
         </div>
       </div>
       <div className="py-[8rem] bg-[#F9F8F3]">
-        <div className="max-w-[1300px] m-auto pb-[6rem] grid grid-cols-5 gap-[5rem]">
+        <div className="max-w-[1300px] m-auto grid grid-cols-5 gap-[5rem]">
           <div className="col-span-2">
             <h1 className="font-obviously_m text-[22px] leading-[34px] text-brand_primary mb-6">
               Our Story

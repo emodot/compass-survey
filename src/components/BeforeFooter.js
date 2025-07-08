@@ -1,9 +1,11 @@
 import Button from "components/Inputs/Button";
+import { useNavigate } from "react-router-dom";
 
 // import { motion } from "framer-motion";
 // import { fadeIn } from "variants.js";
 
 const BeforeFooter = () => {
+  const navigate = useNavigate();
   return (
     <div className="relative h-[400px]">
       <div className="grid grid-cols-2 h-full">
@@ -20,6 +22,7 @@ const BeforeFooter = () => {
             name={"See What We Do"}
             theme={"secondary"}
             arrowIcon={true}
+            onClick={() => navigate("/projects")}
           />
         </div>
         <div className="pl-[6rem]">
@@ -27,7 +30,12 @@ const BeforeFooter = () => {
             Ready to experience our services in action? Get in Touch with our
             experts today.
           </p>
-          <Button name={"Contact Us"} theme={"white"} arrowIcon={true} />
+          <Button
+            name={"Contact Us"}
+            theme={"white"}
+            arrowIcon={true}
+            onClick={() => navigate("/contact-us")}
+          />
         </div>
       </div>
     </div>

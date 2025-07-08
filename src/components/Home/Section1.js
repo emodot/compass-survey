@@ -1,10 +1,12 @@
 import Section1BG from "assets/images/home-sec-1-bg.webp";
 import Button from "components/Inputs/Button";
+import { useNavigate } from "react-router-dom";
 
 // import { motion } from "framer-motion";
 // import { fadeIn } from "variants.js";
 
 const Section1 = () => {
+  const navigate = useNavigate();
   return (
     <div className="">
       <div className="max-w-[1300px] m-auto pt-[13rem] pb-[6rem] grid grid-cols-2">
@@ -24,11 +26,13 @@ const Section1 = () => {
               name={"Discover More"}
               theme={"transparent"}
               arrowIcon={true}
+              onClick={() => navigate("/about-us")}
             />
             <Button
               name={"Get in Touch"}
               theme={"secondary"}
               arrowIcon={true}
+              onClick={() => navigate("/contact-us")}
             />
           </div>
         </div>

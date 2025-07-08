@@ -33,12 +33,17 @@ const Header = () => {
   const navigate = useNavigate();
   const { pathname } = useLocation();
 
-  const test = useCallback(
+  // Determine if a menu item is active
+  const isActive = useCallback(
     (item) => {
-      const regex = new RegExp(item?.toLowerCase());
-      // console.log("Got here", regex.exec(pathname));
-
-      return regex.exec(pathname);
+      // Normalize both to lowercase and check if pathname starts with the link
+      // or includes the link (for subroutes)
+      if (!item?.link) return false;
+      // Exact match or subroute match
+      return (
+        pathname.toLowerCase() === item.link.toLowerCase() ||
+        pathname.toLowerCase().startsWith(item.link.toLowerCase() + "/")
+      );
     },
     [pathname]
   );
@@ -86,19 +91,27 @@ const Header = () => {
           />
         )} */}
         <div className="hidden lg:flex items-center gap-10">
-          {menuOptions.map((item, index) => (
-            <p
-              key={index}
-              className={`cursor-pointer font-qanelas_m text-14 pb-[5px] text-black ${
-                test(item.name) ? "border-b-[1.5px border-brand_primary" : ""
-              }`}
-              onClick={() => {
-                navigate(item.link);
-              }}
-            >
-              {item.name}
-            </p>
-          ))}
+          {menuOptions.map((item, index) => {
+            const active = isActive(item);
+            return (
+              <p
+                key={index}
+                className={`cursor-pointer font-qanelas_m text-14 pb-[5px] text-black transition-all duration-150
+                  ${
+                    active
+                      ? "border-b-[1.5px] border-brand_primary font-bold"
+                      : "border-b-[1.5px] border-transparent"
+                  }
+                  hover:bg-brand_secondary px-3 py-1 pt-2
+                `}
+                onClick={() => {
+                  navigate(item.link);
+                }}
+              >
+                {item.name}
+              </p>
+            );
+          })}
         </div>
         <div className="hidden lg:flex items-center gap-6">
           <Button

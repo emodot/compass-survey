@@ -6,7 +6,7 @@ import { ReactComponent as ActivePrev } from "assets/icons/carousel-prev-arrow-a
 // import { ReactComponent as DisabledNext } from "assets/icons/carousel-next-arrow-disabled.svg";
 // import { ReactComponent as DisabledPrev } from "assets/icons/carousel-prev-arrow-disabled.svg";
 import Button from "components/Inputs/Button";
-// import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const projects = [
   {
@@ -31,6 +31,7 @@ const projects = [
 
 export default function OffshoreProjects() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const navigate = useNavigate();
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
@@ -73,6 +74,7 @@ export default function OffshoreProjects() {
                 name={"View Project"}
                 theme={"secondary"}
                 arrowIcon={true}
+                onClick={() => navigate("/projects")}
               />
             </div>
           </div>

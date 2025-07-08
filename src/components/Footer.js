@@ -9,7 +9,7 @@ import { useState } from "react";
 // import { motion } from "framer-motion";
 // import { fadeIn } from "variants.js";
 
-const Footer = () => {
+const Footer = ({ submitEmail }) => {
   const navigate = useNavigate();
   const [emailAddress, setEmailAddress] = useState("");
 
@@ -74,7 +74,7 @@ const Footer = () => {
               showError={false}
             />
             <div className="flex gap-4">
-              <Button name={"Subscribe"} theme={"secondary"} arrowIcon={true} />
+              <Button name={"Subscribe"} theme={"secondary"} arrowIcon={true} onClick={submitEmail} />
             </div>
           </div>
         </div>

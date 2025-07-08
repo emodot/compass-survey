@@ -26,6 +26,7 @@ module.exports = {
       success_fade: "#F2FDF6",
       success_900: "#106032",
       warning: "#F59E0B",
+      transparent: "#00000000",
       neutral_stroke_1: "#DFE2E2",
       neutral_disabled: "#F2F3F3",
       neutral_stroke_2: "#ECEEEE",
