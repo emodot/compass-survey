@@ -22,7 +22,7 @@ const Section3 = () => {
     <div className="bg-[#EEF9F0]">
       <div className="max-w-[1300px] m-auto py-[6rem] grid grid-cols-5">
         <div className="col-span-2">
-          <h1 className="font-redhawk text-[32px] leading-[40px]">
+          <h1 className="font-redhawk text-[32px] leading-[40px] text-brand_primary">
             Meet the future of <br /> Marine Autonomy
           </h1>
           <div className="mt-[8rem]">

@@ -1,6 +1,6 @@
 import Section2BG from "assets/images/home-sec-2-bg.webp";
 import Button from "components/Inputs/Button";
-import ArrowRight from "assets/icons/arrow-right.svg";
+import { ReactComponent as ArrowRight } from "assets/icons/arrow-right.svg";
 import { useNavigate } from "react-router-dom";
 // import { motion } from "framer-motion";
 // import { fadeIn } from "variants.js";
@@ -11,17 +11,17 @@ const Section2 = () => {
     {
       title: "Hydrographic & Positioning Survey",
       text: "Detailed land mapping for planning and construction.",
-      link: "",
+      link: "/services/hydrographic-positioning-survey",
     },
     {
       title: "High Resolution Geophysical Site Survey",
       text: "Subsurface imaging for site assessment and safety.",
-      link: "",
+      link: "/services/high-resolution-geophysical-survey",
     },
     {
       title: "Geotechnical Site Investigation",
       text: "Soil and ground analysis for engineering design.",
-      link: "",
+      link: "/services/geotechnical-site-investigations",
     },
   ];
   return (
@@ -48,7 +48,12 @@ const Section2 = () => {
           </p>
         </div>
         <div className="flex flex-col justify-end h-full w-full">
-          <Button name={"Learn More"} theme={"secondary"} arrowIcon={true} onClick={() => navigate("/projects")} />
+          <Button
+            name={"Learn More"}
+            theme={"secondary"}
+            arrowIcon={true}
+            onClick={() => navigate("/projects")}
+          />
         </div>
       </div>
       <div
@@ -68,15 +73,18 @@ const Section2 = () => {
           </p>
           <div className="grid grid-cols-3 gap-6">
             {whatWeDo.map((item, index) => (
-              <div className="p-6 bg-white">
+              <div
+                className="p-6 bg-white/10 hover:bg-white group cursor-pointer backdrop-blur-sm border border-white/30 transition-all duration-500"
+                onClick={() => navigate(item.link)}
+              >
                 <div className="w-[80%]">
-                  <p className="text-[18px] font-obviously_m mb-4">
+                  <p className="text-[18px] font-obviously_m mb-4 text-white group-hover:text-brand_primary transition-colors">
                     {item.title}
                   </p>
-                  <p className="text-[14px] font-obviously_r mb-6">
+                  <p className="text-[14px] font-obviously_r mb-6 text-white group-hover:text-brand_primary transition-colors">
                     {item.text}
                   </p>
-                  <img src={ArrowRight} alt="arrow-right" />
+                  <ArrowRight />
                 </div>
               </div>
             ))}

@@ -41,7 +41,7 @@ const Section2 = () => {
               Our Story
             </h1>
             <h2 className="font-redhawk text-[32px] leading-[40px] text-brand_primary mb-[3rem]">
-              Charting New Paths, <br /> Solving Real Problems.
+              Charting New Paths. <br /> Solving Real Problems.
             </h2>
             <img
               src={Section2BG}
@@ -49,7 +49,7 @@ const Section2 = () => {
               className="hidden md:block"
             />
           </div>
-          <div className="col-span-3">
+          <div className="col-span-3  h-[600px] overflow-y-auto">
             <p className="font-obviously_r text-14 leading-[24px] text-brand_primary">
               In the heart of Nigeria’s oil and gas frontier—where rugged
               terrain meets unforgiving waters and where innovation often feels

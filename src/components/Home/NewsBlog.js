@@ -2,10 +2,12 @@ import Blog1 from "assets/images/temp/blog-1.webp";
 import Blog2 from "assets/images/temp/blog-2.webp";
 import Blog3 from "assets/images/temp/blog-3.webp";
 import Button from "components/Inputs/Button";
+import { useNavigate } from "react-router-dom";
 // import { motion } from "framer-motion";
 // import { fadeIn } from "variants.js";
 
 const NewsBlog = () => {
+  const navigate = useNavigate();
   const blogs = [
     {
       date: "29 May 2025",
@@ -82,7 +84,12 @@ const NewsBlog = () => {
             ))}
         </div>
 
-        <Button name={"See All News"} theme={"transparent"} arrowIcon={true} />
+        <Button
+          name={"See All News"}
+          theme={"transparent"}
+          arrowIcon={true}
+          onClick={() => navigate("/blog")}
+        />
       </div>
     </div>
   );

@@ -55,18 +55,18 @@ export default function OffshoreProjects() {
 
   return (
     <div className="max-w-[1300px] m-auto">
-      <div className="grid grid-cols-1 md:grid-cols-5 h-[700px]">
+      <div className="grid grid-cols-1 md:grid-cols-5 h-[600px]">
         <div
           className="bg-cover bg-center col-span-2"
           style={{ backgroundImage: `url(${currentProject.image})` }}
         >
         </div>
-        <div className="bg-[#003833] flex items-start justify-between col-span-3 p-[6rem]">
+        <div className="bg-[#003833] flex items-start justify-between col-span-3 p-[6rem] pb-0">
           <div className="basis-[70%] text-white flex flex-col justify-center">
             <h3 className="font-obviously_m text-[22px] leading-[32px] mb-[2rem] text-white">
               {currentProject.title}
             </h3>
-            <p className="font-obviously_r text-14 leading-[24px] text-white mb-[8rem]">
+            <p className="font-obviously_r text-14 leading-[24px] text-white mb-[6rem]">
               {currentProject.description}
             </p>
             <div className="">
