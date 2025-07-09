@@ -103,7 +103,7 @@ const Section3 = ({services}) => {
                   <h1 className="font-obviously_m text-[18px] leading-[28px]">
                     {item.title}
                   </h1>
-                  <p className="font-obviously_r text-[14px] leading-[24px] text-[#6E6E6E] mt-4">
+                  <p className="font-obviously_r text-[14px] leading-[24px] text-black mt-4">
                     {item.text}
                   </p>
                 </div>

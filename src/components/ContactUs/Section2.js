@@ -26,16 +26,16 @@ const Section2 = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   return (
-    <div className="">
-      <div className="max-w-[1300px] m-auto pt-[3rem] pb-[6rem]">
-        <div className="grid grid-cols-2 gap-[4rem]">
+    <div className="mt-[-13rem]">
+      <div className="max-w-[1300px] m-auto px-[4rem] pt-[3rem] pb-[6rem]">
+        <div className="grid grid-cols-2 gap-[4rem] items-center">
           <div className="bg-[#F9F8F3] p-[3rem]">
             <p className="font-obviously_r text-16 leading-[24px]">
               Please fill out the form below with your contact details. One of
               our team members will be in touch as soon as possible
             </p>
             <div>
-              <form className="space-y-6">
+              <form className="space-y-10">
                 <Input
                   placeholder="Name"
                   type="text"
@@ -85,7 +85,6 @@ const Section2 = () => {
                 <p className="font-obviously_m text-[14px] pt-4">
                   Preferred Date and Time to be reached
                 </p>
-
                 <div className="md:flex justify-between ">
                   <div className="basis-[47%]">
                     <DefaultDatepicker
@@ -133,7 +132,12 @@ const Section2 = () => {
                   +234 806 411 7691
                 </p>
               </div>
-              <div className="flex items-center gap-6 mb-6">
+              <div
+                className="flex items-center gap-6 mb-6 cursor-pointer"
+                onClick={() => {
+                  window.open("mailto:info@compasssurveyltd.com", "_blank");
+                }}
+              >
                 <EmailIcon className="w-[50px] h-[50px]" />
                 <p className="font-obviously_r text-14 leading-[24px]">
                   info@compasssurveyltd.com
@@ -151,9 +155,9 @@ const Section2 = () => {
               Follow us across our social media platforms
             </p>
             <div className="flex items-center gap-4">
-              <Twitter />
-              <Instagram />
-              <LinkedIn />
+              <Twitter className="w-[30px] h-[30px]" />
+              <Instagram className="w-[30px] h-[30px]" />
+              <LinkedIn className="w-[30px] h-[30px]" />
             </div>
           </div>
         </div>

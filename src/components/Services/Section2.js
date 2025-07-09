@@ -28,7 +28,7 @@ const Section2 = () => {
     },
   ];
   return (
-    <div className="pb-[8rem]">
+    <div className="pb-[8rem] bg-[#F9F8F3]">
       {services.map((item, index) => (
         <div
           className={`max-w-[1300px] m-auto flex ${

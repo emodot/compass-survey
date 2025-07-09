@@ -37,13 +37,17 @@ const Section1 = () => {
           </div>
         </div>
       </div>
-      <div>
-        <img
-          src={Section1BG}
-          alt="cars on highway"
-          className="hidden md:block"
-        />
-      </div>
+      <div
+        className="h-[35rem]"
+        style={{
+          // height: "100%",
+          width: "100%",
+          backgroundImage: `url(${Section1BG})`,
+          backgroundSize: "cover",
+          backgroundPosition: "bottom",
+          backgroundRepeat: "no-repeat",
+        }}
+      ></div>
     </div>
   );
 };

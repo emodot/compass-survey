@@ -6,10 +6,10 @@ import OffshoreProjects from "./OffshoreProjects";
 const Section4 = () => {  
   return (
     <div>
-      <div className="bg-brand_secondary pb-[20rem]">
+      <div className="bg-brand_secondary pb-[17rem]">
         <div className="max-w-[1300px] m-auto pt-[5rem] pb-[6rem] grid grid-cols-2">
           <div>
-            <p className="text-[22px] font-obviously_m leading-[24px] mb-6">
+            <p className="text-[22px] font-obviously_m leading-[24px] mb-6 text-brand_primary">
               Our Projects
             </p>
             <h1 className="font-redhawk text-[45px] leading-[52px] text-brand_primary">
@@ -24,7 +24,7 @@ const Section4 = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[-22rem]">
+      <div className="mt-[-18rem]">
         <OffshoreProjects />
       </div>
     </div>

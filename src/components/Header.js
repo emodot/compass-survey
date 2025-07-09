@@ -102,7 +102,7 @@ const Header = () => {
                       ? "border-b-[1.5px] border-brand_primary font-bold"
                       : "border-b-[1.5px] border-transparent"
                   }
-                  hover:bg-brand_secondary px-3 py-1 pt-2
+                  hover:bg-brand_secondary transition-colors duration-500 px-3 py-1 pt-2
                 `}
                 onClick={() => {
                   navigate(item.link);

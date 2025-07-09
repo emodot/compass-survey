@@ -18,46 +18,6 @@ const GeotechnicalSiteInvestigations = () => {
 
     const services = [
       {
-        title: "Uncrewed Survey Vehicles (USVs)",
-        text: "Enabling safe, efficient data acquisition in shallow, narrow, or high-risk waters, minimizing human exposure.",
-        image: ServicesFeature1,
-      },
-      {
-        title: "Multibeam & Single-Beam Echo Sounding",
-        text: "Capturing high-precision depth profiles and bathymetric maps for infrastructure development, dredging, and habitat analysis.",
-        image: ServicesFeature2,
-      },
-      {
-        title: "Real-Time GNSS & RTK Positioning",
-        text: "Delivering accurate location data to support offshore structures, vessels, or construction equipment.",
-        image: ServicesFeature1,
-      },
-      {
-        title: "Tidal and Current Monitoring",
-        text: "Monitoring marine dynamics for operational safety, environmental studies, and project planning.",
-        image: ServicesFeature2,
-      },
-      {
-        title: "Side-Scan Sonar Imaging",
-        text: "Generates high-resolution images of the seabed to identify obstructions, objects, and surface features critical to construction and safety.",
-        image: ServicesFeature1,
-      },
-      {
-        title: "Sub-Bottom Profiling",
-        text: "Reveals buried layers and sediments beneath the seabed—key for foundation design, dredging, and route feasibility.",
-        image: ServicesFeature2,
-      },
-      {
-        title: "Magnetometer Surveys",
-        text: "Detects ferrous objects and potential UXOs—ensuring safe excavation and installation.",
-        image: ServicesFeature1,
-      },
-      {
-        title: "Seabed Classification & Interpretation",
-        text: "Provides detailed terrain modeling for infrastructure siting, habitat assessment, and geohazard mitigation.",
-        image: ServicesFeature2,
-      },
-      {
         title: "Cone Penetration Testing (CPT)",
         text: "Real-time profiling of soil resistance and stratigraphy, ideal for offshore and nearshore foundation design.",
         image: ServicesFeature1,
