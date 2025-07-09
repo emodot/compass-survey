@@ -1,6 +1,6 @@
 import React from "react";
-import BtnArrow from "assets/icons/btn-arrow.svg";
-import BtnArrowSecondary from "assets/icons/btn-arrow-sec.svg";
+import { ReactComponent as BtnArrow } from "assets/icons/btn-arrow.svg";
+import { ReactComponent as BtnArrowSecondary } from "assets/icons/btn-arrow-sec.svg";
 // import PropTypes from "prop-types";
 
 const Button = ({
@@ -17,10 +17,10 @@ const Button = ({
     <button
       disabled={disabled || loading}
       onClick={onClick}
-      className={`
+      className={`group transition-all duration-300
                 ${
                   theme === "primary" && !disabled
-                    ? "bg-brand_primary text-white"
+                    ? "bg-brand_primary text-white hover:bg-white"
                     : ""
                 }
                 ${
@@ -35,12 +35,12 @@ const Button = ({
                 }
                 ${
                   theme === "secondary" && !disabled
-                    ? "bg-brand_secondary text-[#192F36]"
+                    ? "bg-brand_secondary text-[#192F36] hover:bg-brand_primary"
                     : ""
                 }
                 ${
                   theme === "transparent" && !disabled
-                    ? "border bg-[#f2f4f700]"
+                    ? "border bg-[#f2f4f700] hover:bg-brand_primary hover:border-none"
                     : ""
                 }
                 ${
@@ -48,7 +48,7 @@ const Button = ({
                     ? "bg-[#f2f4f700] !p-0"
                     : ""
                 }
-        px-[16px] whitespace-nowrap flex justify-center items-center transition ease-in-out duration-500 rounded-[0px] h-[40px] w-fit text-14 font-obviously_m  ${className}`}
+        px-[16px] whitespace-nowrap flex justify-center items-center transition ease-in-out duration-500 rounded-[0px] h-[40px] w-fit text-14 font-obviously_m ${className}`}
     >
       {loading ? (
         <svg
@@ -61,7 +61,7 @@ const Button = ({
           <g>
             <path
               d="M75.4 126.63a11.43 11.43 0 01-2.1-22.65 40.9 40.9 0 0030.5-30.6 11.4 11.4 0 1122.27 4.87h.02a63.77 63.77 0 01-47.8 48.05v-.02a11.38 11.38 0 01-2.93.37z"
-              fill={theme !== "transparent" ? "#FFFFFF" : "#E21C37"}
+              fill={theme !== "transparent" ? "#053333" : "#053333"}
             />
             <animateTransform
               attributeName="transform"
@@ -76,17 +76,75 @@ const Button = ({
       ) : (
         <div className="flex items-center gap-4">
           <div
-            className={`pt-[4px] text-14 ${
-              theme === "primary" ? "text-white" : ""
+            className={`pt-[4px] text-14 transition-all duration-300 ${
+              theme === "primary"
+                ? "text-white group-hover:text-brand_primary"
+                : theme === "secondary"
+                ? "text-brand_primary group-hover:text-white"
+                : theme === "transparent"
+                ? "text-brand_primary group-hover:text-white"
+                : ""
             }`}
           >
             {name || children}
           </div>
           {arrowIcon && (
-            <img
-              src={theme === "primary" ? BtnArrowSecondary : theme === "full_transparent" ? BtnArrowSecondary : BtnArrow}
-              alt="arrow-right"
-            />
+            <svg
+              className={`transition-all duration-300 group-hover:-rotate-45`}
+              width="23"
+              height="23"
+              viewBox="0 0 23 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                y="0.571289"
+                width="22.3194"
+                height="22.3194"
+                rx="11.1597"
+                className={`transition-all duration-300 ${
+                  theme === "primary"
+                    ? "group-hover:fill-brand_primary"
+                    : theme === "secondary"
+                    ? "group-hover:fill-brand_secondary"
+                    : theme === "transparent"
+                    ? "group-hover:fill-brand_secondary"
+                    : ""
+                }`}
+                fill={
+                  theme === "primary"
+                    ? "#E7FF2A"
+                    : theme === "secondary"
+                    ? "#053333"
+                    : theme === "full_transparent"
+                    ? "#E7FF2A"
+                    : "#053333"
+                }
+              />
+              <path
+                d="M17.9216 12.1287L12.7509 17.2994C12.6454 17.4049 12.5023 17.4642 12.3531 17.4642C12.2039 17.4642 12.0609 17.4049 11.9554 17.2994C11.8499 17.1939 11.7906 17.0509 11.7906 16.9017C11.7906 16.7525 11.8499 16.6094 11.9554 16.5039L16.166 12.2933L4.79593 12.2938C4.64666 12.2938 4.50351 12.2345 4.39796 12.1289C4.29241 12.0234 4.23312 11.8802 4.23312 11.731C4.23312 11.5817 4.29241 11.4385 4.39796 11.333C4.50351 11.2274 4.64666 11.1682 4.79593 11.1682L16.166 11.1687L11.9554 6.958C11.8499 6.85251 11.7906 6.70943 11.7906 6.56025C11.7906 6.41106 11.8499 6.26799 11.9554 6.1625C12.0609 6.05701 12.2039 5.99775 12.3531 5.99775C12.5023 5.99775 12.6454 6.05701 12.7509 6.1625L17.9216 11.3332C18.0271 11.4387 18.0864 11.5818 18.0864 11.731C18.0864 11.8802 18.0271 12.0232 17.9216 12.1287Z"
+                className={`transition-all duration-300 ${
+                  theme === "primary"
+                    ? "group-hover:fill-brand_secondary"
+                    : theme === "secondary"
+                    ? "group-hover:fill-brand_primary"
+                    : theme === "transparent"
+                    ? "group-hover:fill-brand_primary"
+                    : ""
+                }`}
+                fill={
+                  theme === "primary"
+                    ? "#053333"
+                    : theme === "transparent"
+                    ? "#ffffff"
+                    : theme === "white"
+                    ? "#ffffff"
+                    : theme === "full_transparent"
+                    ? "#053333"
+                    : "#E7FF2A"
+                }
+              />
+            </svg>
           )}
         </div>
       )}
