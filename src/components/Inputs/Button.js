@@ -1,6 +1,4 @@
 import React from "react";
-import { ReactComponent as BtnArrow } from "assets/icons/btn-arrow.svg";
-import { ReactComponent as BtnArrowSecondary } from "assets/icons/btn-arrow-sec.svg";
 // import PropTypes from "prop-types";
 
 const Button = ({
