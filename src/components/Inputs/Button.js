@@ -25,7 +25,7 @@ const Button = ({
                 }
                 ${
                   theme === "white" && !disabled
-                    ? "bg-white text-[#030D10]"
+                    ? "bg-white text-[#030D10] hover:bg-brand_primary"
                     : ""
                 }
                 ${
@@ -36,6 +36,11 @@ const Button = ({
                 ${
                   theme === "secondary" && !disabled
                     ? "bg-brand_secondary text-[#192F36] hover:bg-brand_primary"
+                    : ""
+                }
+                ${
+                  theme === "secondary_plus" && !disabled
+                    ? "bg-brand_secondary text-[#192F36] hover:bg-white"
                     : ""
                 }
                 ${
@@ -83,6 +88,8 @@ const Button = ({
                 ? "text-brand_primary group-hover:text-white"
                 : theme === "transparent"
                 ? "text-brand_primary group-hover:text-white"
+                : theme === "white"
+                ? "text-brand_primary group-hover:text-white"
                 : ""
             }`}
           >
@@ -109,6 +116,8 @@ const Button = ({
                     ? "group-hover:fill-brand_secondary"
                     : theme === "transparent"
                     ? "group-hover:fill-brand_secondary"
+                    : theme === "white"
+                    ? "group-hover:fill-brand_secondary"
                     : ""
                 }`}
                 fill={
@@ -129,6 +138,8 @@ const Button = ({
                     : theme === "secondary"
                     ? "group-hover:fill-brand_primary"
                     : theme === "transparent"
+                    ? "group-hover:fill-brand_primary"
+                    : theme === "white"
                     ? "group-hover:fill-brand_primary"
                     : ""
                 }`}

@@ -50,7 +50,7 @@ const Section2 = () => {
             }}
           ></div>
           <div className="basis-[48%]">
-            <h1 className="font-obviously_r text-[28px] leading-[34px]">
+            <h1 className="font-obviously_r text-[28px] leading-[34px] w-[85%]">
               {item.title}
             </h1>
             <p className="font-obviously_r text-[14px] leading-[24px] text-[#6E6E6E] mb-6 mt-4">
