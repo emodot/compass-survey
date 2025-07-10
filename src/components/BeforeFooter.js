@@ -20,7 +20,7 @@ const BeforeFooter = () => {
           </p>
           <Button
             name={"See What We Do"}
-            theme={"secondary"}
+            theme={"secondary_plus"}
             arrowIcon={true}
             onClick={() => navigate("/projects")}
           />

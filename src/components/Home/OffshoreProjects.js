@@ -72,7 +72,7 @@ export default function OffshoreProjects() {
             <div className="">
               <Button
                 name={"View Project"}
-                theme={"secondary"}
+                theme={"secondary_plus"}
                 arrowIcon={true}
                 onClick={() => navigate("/projects")}
               />
