@@ -3,8 +3,8 @@
 
 const Section2 = ({ header1, header2, text1, text2, image }) => {
   return (
-    <div className="py-[8rem]">
-      <div className="max-w-[1300px] m-auto pb-[6rem]">
+    <div className="pt-[96px]">
+      <div className="max-w-[1300px] m-auto">
         <h1 className="font-redhawk text-[32px] leading-[14px] mb-8">
           {header1}
         </h1>

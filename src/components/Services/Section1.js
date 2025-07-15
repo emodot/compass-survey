@@ -5,7 +5,7 @@ import Section1BG from "assets/images/services-sec-1-bg.webp";
 const Section1 = () => {
   return (
     <div className="">
-      <div className="max-w-[1300px] m-auto pt-[13rem] pb-[6rem]">
+      <div className="max-w-[1300px] m-auto pt-[13rem]">
         <div>
           <h1 className="font-redhawk text-[45px] leading-[52px] w-[60%] mb-6">
             What we do
@@ -16,13 +16,19 @@ const Section1 = () => {
             technical know-how with localized insight to solve our clients’ most
             pressing challenges—especially in shallow water environments.
           </p>
-          <img
-            src={Section1BG}
-            alt="people in a meeting"
-            className="hidden md:block"
-          />
         </div>
       </div>
+      <div
+        className="h-[35rem]"
+        style={{
+          // height: "100%",
+          width: "100%",
+          backgroundImage: `url(${Section1BG})`,
+          backgroundSize: "cover",
+          backgroundPosition: "bottom",
+          backgroundRepeat: "no-repeat",
+        }}
+      ></div>
     </div>
   );
 };

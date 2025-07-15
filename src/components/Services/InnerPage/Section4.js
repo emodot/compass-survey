@@ -4,8 +4,8 @@
 const Section4 = ({process}) => {
 
   return (
-    <div className="pt-[8rem] bg-[#F0F0F0]">
-      <div className="max-w-[1300px] m-auto pb-[6rem] flex justify-between">
+    <div className="pt-[96px] pb-[3rem] bg-[#F0F0F0]">
+      <div className="max-w-[1300px] w-[95%] m-auto flex justify-between">
         <div className="basis-[42%]">
           <h1 className="font-redhawk text-[32px] leading-[42px] mb-8 text-[#192F36]">
             Our Process
