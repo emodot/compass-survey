@@ -9,13 +9,13 @@ const Section1 = () => {
   const navigate = useNavigate();
   return (
     <div className="">
-      <div className="max-w-[1300px] m-auto pt-[13rem] pb-[6rem] grid grid-cols-2">
+      <div className="max-w-[1300px] w-[95%] m-auto pt-[13rem] pb-[6rem] grid lg:grid-cols-2 grid-cols-1">
         <div>
-          <h1 className="font-redhawk text-[50px] leading-[64px]">
+          <h1 className="font-redhawk text-[45px] lg:text-[50px] leading-[64px]">
             Innovating Survey Solutions for Africa
           </h1>
         </div>
-        <div className="pl-[4rem]">
+        <div className="lg:pl-[4rem]">
           <p className="font-obviously_r text-14 leading-[24px] mb-6">
             We are your innovative, tech-native partner that delivers custom
             solutions using uncrewed survey vehicles and local engineering

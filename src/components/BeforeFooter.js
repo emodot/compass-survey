@@ -22,7 +22,7 @@ const BeforeFooter = () => {
             name={"See What We Do"}
             theme={"secondary_plus"}
             arrowIcon={true}
-            onClick={() => navigate("/projects")}
+            onClick={() => navigate("/services")}
           />
         </div>
         <div className="pl-[6rem]">

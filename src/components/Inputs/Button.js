@@ -79,7 +79,7 @@ const Button = ({
       ) : (
         <div className="flex items-center gap-4">
           <div
-            className={`pt-[4px] text-14 transition-all duration-300 ${
+            className={`pt-[4px] font-obviously_m text-14 transition-all duration-300 ${
               theme === "primary"
                 ? "text-white group-hover:text-brand_primary"
                 : theme === "secondary"

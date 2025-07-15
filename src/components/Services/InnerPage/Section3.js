@@ -1,5 +1,6 @@
 import { ReactComponent as ActiveNext } from "assets/icons/carousel-next-arrow-active.svg";
-import { ReactComponent as ActivePrev } from "assets/icons/carousel-prev-arrow-active.svg";
+// import { ReactComponent as ActivePrev } from "assets/icons/carousel-prev-arrow-active.svg";
+import { ReactComponent as DisabledPrev } from "assets/icons/carousel-prev-arrow-disabled2.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 // import { motion } from "framer-motion";
@@ -36,19 +37,19 @@ const Section3 = ({services}) => {
     } = rest;
     return (
       <div className="absolute top-[1rem] right-[1rem] flex space-x-1">
-        <ActivePrev
+        <DisabledPrev
           className={currentSlide === 0 ? "opacity-25" : ""}
           onClick={() => previous()}
         />
         <ActiveNext
-          className={currentSlide === 11 ? "opacity-25" : ""}
+          className={currentSlide === 2 ? "opacity-25" : ""}
           onClick={() => next()}
         />
       </div>
     );
   };
   return (
-    <div className="pb-[8rem]">
+    <div className="py-[96px]">
       <div className="max-w-[1300px] m-auto relative">
         <h1 className="font-redhawk text-[32px] text-center">
           Key Service Features{" "}
@@ -66,7 +67,7 @@ const Section3 = ({services}) => {
             dotListClass="text-brand_primary"
             draggable
             focusOnSelect={false}
-            infinite={true}
+            infinite={false}
             itemClass=""
             keyBoardControl
             minimumTouchDrag={80}
@@ -75,8 +76,8 @@ const Section3 = ({services}) => {
             renderButtonGroupOutside
             renderDotsOutside={false}
             responsive={responsive}
-            rewind={false}
-            rewindWithAnimation={false}
+            rewind={true}
+            rewindWithAnimation={true}
             rtl={false}
             shouldResetAutoplay
             showDots={false}

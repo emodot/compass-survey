@@ -1,15 +1,17 @@
 import Button from "components/Inputs/Button";
+import { useNavigate } from "react-router-dom";
 // import { motion } from "framer-motion";
 // import { fadeIn } from "variants.js";
 import OffshoreProjects from "./OffshoreProjects";
 
-const Section4 = () => {  
+const Section4 = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="bg-brand_secondary pb-[17rem]">
-        <div className="max-w-[1300px] m-auto pt-[5rem] pb-[6rem] grid grid-cols-2">
+        <div className="max-w-[1300px] w-[95%] m-auto pt-[5rem] pb-[6rem] grid lg:grid-cols-2 grid-cols-1">
           <div>
-            <p className="text-[22px] font-obviously_m leading-[24px] mb-6 text-brand_primary">
+            <p className="lg:text-[22px] text-[16px] font-obviously_m leading-[24px] mb-6 text-brand_primary">
               Our Projects
             </p>
             <h1 className="font-redhawk text-[45px] leading-[52px] text-brand_primary">
@@ -17,9 +19,14 @@ const Section4 = () => {
               Backed by experience.
             </h1>
           </div>
-          <div>
+          <div className="lg:block hidden">
             <div className="flex flex-col items-end justify-end h-full">
-              <Button name={"Learn More"} theme={"primary"} arrowIcon={true} />
+              <Button
+                name={"Learn More"}
+                theme={"primary"}
+                arrowIcon={true}
+                onClick={() => navigate("/projects")}
+              />
             </div>
           </div>
         </div>

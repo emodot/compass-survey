@@ -30,7 +30,7 @@ const NewsBlog = () => {
   ];
   return (
     <div className="">
-      <div className="max-w-[1300px] m-auto pt-[8rem] pb-[6rem]">
+      <div className="max-w-[1300px] w-[95%] m-auto pt-[8rem] pb-[6rem]">
         <div>
           <h1 className="font-obviously_m text-[24px] leading-[32px] mb-[2rem]">
             News / Blog
