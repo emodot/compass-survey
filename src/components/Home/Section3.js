@@ -20,12 +20,12 @@ const Section3 = () => {
   ];
   return (
     <div className="bg-[#EEF9F0]">
-      <div className="max-w-[1300px] w-[95%] m-auto py-[6rem] grid md:grid-cols-5 grid-cols-1 items-center">
+      <div className="max-w-[1300px] w-[95%] m-auto lg:py-[6rem] py-[4rem] grid md:grid-cols-5 grid-cols-1 items-center">
         <div className="col-span-1 md:col-span-2">
           <h1 className="font-redhawk md:text-[32px] text-[24px] leading-[40px] text-brand_primary text-center md:text-left">
             Meet the future of <br /> Marine Autonomy
           </h1>
-          <div className="mt-[8rem]">
+          <div className="lg:mt-[8rem] mt-[4rem]">
             <p className="font-obviously_r text-16 leading-[24px] mb-2 text-brand_primary text-center md:text-left">
               The Compass Surveyor
             </p>

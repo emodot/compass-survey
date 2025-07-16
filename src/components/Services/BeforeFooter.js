@@ -15,8 +15,8 @@ const BeforeFooter = () => {
     Services3,
   ];
   return (
-    <div className="relative h-[400px]">
-      <div className="grid grid-cols-2 h-full">
+    <div className="relative lg:h-[400px]">
+      <div className="lg:grid grid-cols-2 h-full">
         <div className="bg-brand_primary">
           <Carousel
             additionalTransfrom={0}
@@ -72,24 +72,31 @@ const BeforeFooter = () => {
             {carouselImages.map((item, index) => (
               <div
                 key={index}
+                className="w-full lg:h-[25rem] h-[20rem]"
                 style={{
                   backgroundImage: `url(${item})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
-                  height: "25rem",
-                  width: "100%",
                 }}
               ></div>
             ))}
           </Carousel>
         </div>
-        <div className="bg-brand_primary text-white px-6 py-16"></div>
+        <div className="lg:hidden block bg-brand_primary text-white px-6 py-16">
+          <div className="pl-[1.5rem]">
+            <p className="font-obviously_m text-[22px] leading-[32px] xl:w-[60%] lg:w-[80%] w-[90%] mb-[4rem] text-white">
+              Ready to experience our services in action? Get in Touch with our
+              experts today.
+            </p>
+            <Button name={"Contact Us"} theme={"secondary"} arrowIcon={true} />
+          </div>
+        </div>
       </div>
-      <div className="max-w-[1300px] m-auto py-[5rem] grid grid-cols-2 absolute top-0 left-1/2 -translate-x-1/2 w-full">
+      <div className="lg:grid hidden max-w-[1300px] m-auto py-[5rem] grid-cols-2 absolute top-0 left-1/2 -translate-x-1/2 w-full">
         <div className="pr-[4rem]"></div>
-        <div className="pl-[6rem]">
-          <p className="font-obviously_m text-[22px] leading-[32px] w-[60%] mb-[4rem] text-white">
+        <div className="xl:pl-[6rem] lg:pl-[4rem] pl-[2rem]">
+          <p className="font-obviously_m text-[22px] leading-[32px] xl:w-[60%] lg:w-[80%] w-[90%] mb-[4rem] text-white">
             Ready to experience our services in action? Get in Touch with our
             experts today.
           </p>

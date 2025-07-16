@@ -70,26 +70,11 @@ const Header = () => {
         }`}
       >
         <LogoBlack
-          className="w-[5rem] lg:w-[9.5rem] cursor-pointer"
+          className="w-[9rem] lg:w-[9.5rem] cursor-pointer"
           onClick={() => {
             navigate("/");
           }}
         />
-        {/* {lightTheme ? (
-          <LogoBlack
-            className="w-[5rem] xl:w-[6.5rem] cursor-pointer"
-            onClick={() => {
-              navigate("/");
-            }}
-          />
-        ) : (
-          <LogoWhite
-            className="w-[5rem] xl:w-[6.5rem] cursor-pointer"
-            onClick={() => {
-              navigate("/");
-            }}
-          />
-        )} */}
         <div className="hidden lg:flex items-center gap-10">
           {menuOptions.map((item, index) => {
             const active = isActive(item);
@@ -124,11 +109,6 @@ const Header = () => {
         </div>
         <div className="lg:hidden">
           <DarkHamburger onClick={() => toggleMenu()} />
-          {/* {lightTheme ? (
-            <DarkHamburger onClick={() => toggleMenu()} />
-          ) : (
-            <LightHamburger onClick={() => toggleMenu()} />
-          )} */}
         </div>
       </div>
     </motion.div>
