@@ -50,11 +50,11 @@ const Section3 = ({services}) => {
   };
   return (
     <div className="py-[96px]">
-      <div className="max-w-[1300px] m-auto relative">
-        <h1 className="font-redhawk text-[32px] text-center">
+      <div className="max-w-[1300px] w-[95%] m-auto relative">
+        <h1 className="font-redhawk lg:text-[32px] text-[24px] text-center">
           Key Service Features{" "}
         </h1>
-        <div className="mt-[4rem]">
+        <div className="lg:block hidden mt-[4rem]">
           <Carousel
             additionalTransfrom={0}
             arrows={false}
@@ -111,6 +111,33 @@ const Section3 = ({services}) => {
               </div>
             ))}
           </Carousel>
+        </div>
+        <div className="lg:hidden block mt-[2rem]">
+          {services.map((item, index) => (
+            <div className="mb-[2rem]" key={index}>
+              <div
+                className="h-[23rem]"
+                style={{
+                  backgroundImage: `url(${item.image})`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                }}
+              ></div>
+              <div
+                className={`px-[2rem] py-[3rem] ${
+                  index % 2 === 0 ? "bg-[#97DBA2]" : "bg-[#F0F0F0]"
+                }`}
+              >
+                <h1 className="font-obviously_m text-[18px] leading-[28px]">
+                  {item.title}
+                </h1>
+                <p className="font-obviously_r text-[14px] leading-[24px] text-black mt-4">
+                  {item.text}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

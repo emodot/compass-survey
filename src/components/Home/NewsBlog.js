@@ -36,17 +36,17 @@ const NewsBlog = () => {
             News / Blog
           </h1>
         </div>
-        <div className="grid grid-flow-col grid-rows-2 gap-4 mb-[4rem]">
-          <div className="row-span-2 grid grid-cols-2 gap-4 bg-[#EDEEEE]">
+        <div className="grid lg:grid-flow-col grid-rows-2 gap-4 mb-[4rem]">
+          <div className="row-span-2 lg:grid grid-cols-2 gap-4 bg-[#EDEEEE]">
             <div
               style={{ backgroundImage: `url(${blogs[0].image})` }}
-              className="bg-cover bg-center"
+              className="bg-cover bg-center h-[400px] lg:h-auto"
             ></div>
             <div className="px-[2rem] py-[4rem] pb-[2rem] flex flex-col justify-between">
               <p className="text-[12px] leading-[16px] mb-[1rem]">
                 {blogs[0].date}
               </p>
-              <h3 className="font-obviously_r text-[16px] leading-[24px] mb-[5rem]">
+              <h3 className="font-obviously_r text-[16px] leading-[24px] lg:mb-[5rem] mb-[2rem]">
                 {blogs[0].title}
               </h3>
               <Button
@@ -61,17 +61,17 @@ const NewsBlog = () => {
             .map((blog, index) => (
               <div
                 key={index}
-                className="col-span-1 grid grid-cols-7 gap-4 bg-[#EDEEEE] p-[10px]"
+                className="col-span-1 grid grid-cols-7 lg:gap-4 gap-2 bg-[#EDEEEE] p-[10px]"
               >
                 <div
                   style={{ backgroundImage: `url(${blog.image})` }}
-                  className="bg-cover bg-center h-[150px] col-span-2"
+                  className="bg-cover bg-center h-[150px] lg:col-span-2 col-span-3"
                 ></div>
-                <div className="p-[10px] pb-0 col-span-5">
+                <div className="p-[10px] pb-0 lg:col-span-5 col-span-4">
                   <p className="text-[12px] leading-[16px] mb-[10px]">
                     {blog.date}
                   </p>
-                  <h3 className="font-obviously_r text-[14px] leading-[24px] mb-[1rem]">
+                  <h3 className="font-obviously_r lg:text-[14px] text-[12px] lg:leading-[24px] leading-[20px] mb-[1rem]">
                     {blog.title}
                   </h3>
                   <Button

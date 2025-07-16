@@ -31,17 +31,17 @@ const Section2 = () => {
     <div className="pt-[1rem] pb-[8rem] bg-[#F9F8F3]">
       {services.map((item, index) => (
         <div
-          className={`max-w-[1300px] m-auto flex ${
+          className={`max-w-[1300px] w-[95%] m-auto lg:flex ${
             index % 2 === 0 ? "flex-row" : "flex-row-reverse"
           } ${
             index === services.length - 1
               ? ""
-              : "border-b border-b-border_stroke_2"
-          } justify-between items-center py-[6rem]`}
+              : "lg:border-b border-b-border_stroke_2"
+          } justify-between items-center lg:py-[6rem] py-[4rem]`}
           key={index}
         >
           <div
-            className="basis-[48%] h-[25rem]"
+            className="basis-[48%] lg:h-[25rem] h-[20rem]"
             style={{
               backgroundImage: `url(${item.image})`,
               backgroundSize: "cover",
@@ -49,11 +49,11 @@ const Section2 = () => {
               backgroundPosition: "center",
             }}
           ></div>
-          <div className="basis-[48%]">
-            <h1 className="font-obviously_r text-[28px] leading-[34px] w-[85%]">
+          <div className="basis-[48%] lg:mt-0 mt-4">
+            <h1 className="font-obviously_r lg:text-[28px] text-[18px] lg:leading-[34px] leading-[28px] w-[85%]">
               {item.title}
             </h1>
-            <p className="font-obviously_r text-[14px] leading-[24px] text-[#6E6E6E] mb-6 mt-4">
+            <p className="font-obviously_r lg:text-[14px] text-[12px] lg:leading-[24px] leading-[20px] text-[#6E6E6E] mb-6 lg:mt-4 mt-2">
               {item.text}
             </p>
             <Link to={item.link}>

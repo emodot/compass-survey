@@ -69,7 +69,7 @@ const ClientsServed = () => {
       carouselState: { currentSlide },
     } = rest;
     return (
-      <div className="absolute top-[0rem] right-[1rem] flex space-x-1">
+      <div className="absolute lg:top-[0rem] bottom-[2rem] left-[50%] lg:left-[auto] lg:translate-x-0 -translate-x-1/2 lg:right-[1rem] flex space-x-1">
         <DisabledPrev
           className={currentSlide === 0 ? "opacity-25" : ""}
           onClick={() => previous()}
@@ -83,9 +83,9 @@ const ClientsServed = () => {
   };
 
   return (
-    <div className="max-w-[1300px] m-auto px-[2rem] py-[110px]">
-      <div className="relative">
-        <h1 className="font-obviously_m text-[24px] text-center">
+    <div className="max-w-[1300px] m-auto px-[2rem] pt-[110px]">
+      <div className="relative pb-[110px]">
+        <h1 className="font-obviously_m lg:text-[24px] text-[16px] text-center">
           Some Clients we’ve Served
         </h1>
         <div className="">

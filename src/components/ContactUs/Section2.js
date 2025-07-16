@@ -26,11 +26,11 @@ const Section2 = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   return (
-    <div className="mt-[-13rem]">
-      <div className="max-w-[1300px] m-auto px-[4rem] pt-[3rem] pb-[6rem]">
-        <div className="grid grid-cols-2 gap-[4rem] items-center">
-          <div className="bg-[#F9F8F3] p-[3rem]">
-            <p className="font-obviously_r text-16 leading-[24px]">
+    <div className="lg:mt-[-7rem] mt-[-5rem]">
+      <div className="max-w-[1300px] w-[95%] m-auto lg:px-[4rem] px-[0] lg:pt-[3rem] pt-[2rem] pb-[6rem]">
+        <div className="lg:grid grid-cols-2 gap-[4rem] items-center">
+          <div className="bg-[#F9F8F3] lg:p-[3rem] p-[1.5rem]">
+            <p className="font-obviously_r lg:text-16 text-[14px] leading-[24px]">
               Please fill out the form below with your contact details. One of
               our team members will be in touch as soon as possible
             </p>
@@ -82,7 +82,7 @@ const Section2 = () => {
                   </select>
                 </div>
 
-                <p className="font-obviously_m text-[14px] pt-4">
+                <p className="font-obviously_m lg:text-[14px] text-[12px] pt-4">
                   Preferred Date and Time to be reached
                 </p>
                 <div className="md:flex justify-between ">
@@ -121,13 +121,13 @@ const Section2 = () => {
               </form>
             </div>
           </div>
-          <div>
-            <h3 className="font-obviously_m text-[24px] mb-6">
+          <div className="mt-[4rem] lg:mt-0">
+            <h3 className="font-obviously_m lg:text-[24px] text-[16px] mb-6">
               Would you prefer to contact us directly?
             </h3>
             <div className="mb-[5rem]">
               <div className="flex items-center gap-6 mb-6">
-                <PhoneIcon className="w-[50px] h-[50px]" />
+                <PhoneIcon className="lg:w-[50px] w-[40px] lg:h-[50px] h-[40px]" />
                 <p className="font-obviously_r text-14 leading-[24px]">
                   +234 806 411 7691
                 </p>
@@ -138,20 +138,22 @@ const Section2 = () => {
                   window.open("mailto:info@compasssurveyltd.com", "_blank");
                 }}
               >
-                <EmailIcon className="w-[50px] h-[50px]" />
+                <EmailIcon className="lg:w-[50px] w-[40px] lg:h-[50px] h-[40px]" />
                 <p className="font-obviously_r text-14 leading-[24px]">
                   info@compasssurveyltd.com
                 </p>
               </div>
               <div className="flex items-center gap-6 mb-6">
-                <LocationIcon className="w-[55px] h-[55px]" />
-                <p className="font-obviously_r text-14 leading-[24px]">
+                <div className="basis-[5%]">
+                  <LocationIcon className="lg:w-[50px] w-[40px] lg:h-[50px] h-[40px]" />
+                </div>
+                <p className="basis-[95%] font-obviously_r text-14 leading-[24px]">
                   DH03 Rainbow Town Estate Trans Amadi Industrial Layout Port
                   Harcourt, Nigeria
                 </p>
               </div>
             </div>
-            <p className="font-obviously_m text-[18px] mb-6 w-[50%]">
+            <p className="font-obviously_m lg:text-[18px] text-[16px] mb-6 lg:w-[50%] w-[80%]">
               Follow us across our social media platforms
             </p>
             <div className="flex items-center gap-4">

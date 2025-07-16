@@ -68,7 +68,7 @@ const Input = ({
         onKeyDown={onKeyDown}
         className={`border-b border-b-border_stroke_1 ${variant} 
             ${inputError ? "border-b-error" : "border-b-border_stroke_1"} 
-            h-[50px] px-4 mt-2 text-[#000000] text-14 w-full outline-0 font-obviously_r hide_tap
+            h-[50px] px-4 mt-2 text-[#000000] lg:text-14 text-[12px] w-full outline-0 font-obviously_r hide_tap
             ${
               disabled
                 ? "bg-neutral_disabled border-b-neutral_stroke_2"

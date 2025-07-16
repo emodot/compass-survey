@@ -28,16 +28,16 @@ const OurTeam = () => {
     },
   ];
   return (
-    <div className="py-[8rem] bg-[#F9F8F3]">
-      <div className="max-w-[1300px] m-auto">
-        <div className="pb-[6rem] grid grid-cols-2">
+    <div className="lg:py-[8rem] py-[4rem] bg-[#F9F8F3]">
+      <div className="max-w-[1300px] w-[95%] m-auto">
+        <div className="pb-[6rem] lg:grid grid-cols-2">
           <div>
-            <h1 className="font-redhawk text-[36px] leading-[44px]">
+            <h1 className="font-redhawk lg:text-[36px] text-[24px] lg:leading-[44px] leading-[32px] mb-4 lg:mb-0">
               Our Team
             </h1>
           </div>
           <div>
-            <p className="font-obviously_r text-14 leading-[24px]">
+            <p className="font-obviously_r lg:text-14 text-[12px] lg:leading-[24px] leading-[20px]">
               Our strength lies in our people—dedicated survey engineers, GIS
               experts, drone pilots, and analysts working together to deliver
               world-class outcomes. We eliminate risk, improve efficiency, and
@@ -46,11 +46,11 @@ const OurTeam = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-6 w-full">
+        <div className="lg:grid grid-cols-3 gap-6 w-full">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="col-span-1 p-[2rem] h-[500px] flex items-end relative group"
+              className="lg:mb-0 mb-[2rem] col-span-1 p-[2rem] h-[500px] flex items-end relative group"
               style={{
                 backgroundImage: `url(${member.image})`,
                 backgroundSize: "cover",
