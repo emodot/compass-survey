@@ -9,7 +9,7 @@ const Section2 = () => {
   return (
     <div>
       <div className="lg:py-[8rem] py-[4rem]">
-        <div className="max-w-[1300px] w-[95%] m-auto lg:grid grid-cols-7 gap-6">
+        <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto lg:grid grid-cols-7 gap-6">
           <div className="col-span-2">
             <h1 className="font-obviously_m lg:text-[22px] text-[20px] lg:leading-[34px] leading-[30px] text-brand_primary mb-4 lg:mb-0">
               About Compass <br /> Survey Limited
@@ -38,7 +38,7 @@ const Section2 = () => {
         </div>
       </div>
       <div className="lg:py-[8rem] py-[4rem] bg-[#F9F8F3]">
-        <div className="max-w-[1300px] w-[95%] m-auto lg:grid grid-cols-5 gap-[5rem]">
+        <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto lg:grid grid-cols-5 gap-[5rem]">
           <div className="col-span-2">
             <h1 className="font-obviously_m lg:text-[22px] text-[16px] lg:leading-[34px] leading-[28px] text-brand_primary lg:mb-6 mb-4">
               Our Story
@@ -64,6 +64,34 @@ const Section2 = () => {
               fell short in the unique complexity of Nigerian terrains. But we
               saw what others overlooked: a gap—not just in technology, but in
               tailored, client-driven innovation. <br /> <br />
+            </p>
+            <p className="lg:block hidden font-obviously_r text-14 leading-[24px] text-brand_primary">
+              So, we made a choice. <br />
+              Instead of trying to win price wars or replicate global templates,
+              we focused on what matters most: engineering home-grown,
+              cutting-edge solutions that actually work here. We set out to
+              remove risk, and increase precision—especially in the one place
+              everyone else avoids: shallow waters. <br /> <br />
+              At Compass Survey, we lead with technology, but we build with
+              understanding. Our Uncrewed Survey Vehicles (USVs) aren’t just
+              tools—they’re game-changers. They go where others can’t. They
+              deliver real-time data to clients who need clarity now, not later.
+              They eliminate offshore exposure and dramatically reduce carbon
+              footprints—because safety and sustainability should never be
+              compromised. <br /> <br />
+              But our story isn’t just about equipment. It’s about people and
+              partnership. Every client challenge is an opportunity we take
+              personally. From international oil giants to indigenous energy
+              companies, we walk alongside our clients to co-create solutions
+              that are faster, safer, and smarter. When they face difficult
+              logistics, regulatory pressure, or risky terrain, we don’t offer
+              generic proposals—we offer customised, precision-engineered
+              answers. <br /> <br />
+              Our innovation is local. Our thinking is global. And our promise
+              is simple: “We help you see deeper, reach farther, and operate
+              smarter.” This is not the old way of doing surveys. This is
+              Compass Survey—charting the next frontier in survey excellence,
+              powered by technology and driven by purpose.
             </p>
             {moreText && (
               <p className="lg:hidden block font-obviously_r text-14 leading-[24px] text-brand_primary">

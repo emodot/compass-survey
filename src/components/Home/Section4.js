@@ -9,7 +9,7 @@ const Section4 = () => {
   return (
     <div>
       <div className="bg-brand_secondary pb-[17rem]">
-        <div className="max-w-[1300px] w-[95%] m-auto pt-[5rem] pb-[6rem] grid lg:grid-cols-2 grid-cols-1">
+        <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto pt-[5rem] pb-[6rem] grid lg:grid-cols-2 grid-cols-1">
           <div>
             <p className="lg:text-[22px] text-[16px] font-obviously_m leading-[24px] mb-6 text-brand_primary">
               Our Projects

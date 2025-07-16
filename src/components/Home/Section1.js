@@ -2,26 +2,41 @@ import Section1BG from "assets/images/home-sec-1-bg.webp";
 import Button from "components/Inputs/Button";
 import { useNavigate } from "react-router-dom";
 
-// import { motion } from "framer-motion";
-// import { fadeIn } from "variants.js";
+import { motion } from "framer-motion";
+import { fadeIn } from "variants.js";
 
 const Section1 = () => {
   const navigate = useNavigate();
   return (
     <div className="">
-      <div className="max-w-[1300px] w-[95%] m-auto pt-[13rem] pb-[6rem] grid lg:grid-cols-2 grid-cols-1">
+      <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto pt-[13rem] pb-[6rem] grid lg:grid-cols-2 grid-cols-1">
         <div>
-          <h1 className="font-redhawk text-[45px] lg:text-[50px] leading-[64px]">
+          <motion.h1
+            className="font-redhawk text-[45px] lg:text-[50px] lg:leading-[64px] leading-[54px]"
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            animate="show"
+          >
             Innovating Survey Solutions for Africa
-          </h1>
+          </motion.h1>
         </div>
         <div className="lg:pl-[4rem]">
-          <p className="font-obviously_r text-14 leading-[24px] mb-6">
+          <motion.p
+            className="font-obviously_r text-14 leading-[24px] mb-6"
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            animate="show"
+          >
             We are your innovative, tech-native partner that delivers custom
             solutions using uncrewed survey vehicles and local engineering
             insight.
-          </p>
-          <div className="flex gap-4">
+          </motion.p>
+          <motion.div
+            className="flex gap-4"
+            variants={fadeIn("up", 0.6)}
+            initial="hidden"
+            animate="show"
+          >
             <Button
               name={"Discover More"}
               theme={"transparent"}
@@ -34,7 +49,7 @@ const Section1 = () => {
               arrowIcon={true}
               onClick={() => navigate("/contact-us")}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
       <div

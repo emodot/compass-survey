@@ -4,8 +4,8 @@
 const Section2 = ({ header1, header2, text1, text2, image }) => {
   return (
     <div className="pt-[96px]">
-      <div className="max-w-[1300px] w-[95%] m-auto">
-        <h1 className="font-redhawk lg:text-[32px] text-[24px] lg:leading-[14px] leading-[12px] mb-8">
+      <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto">
+        <h1 className="font-redhawk lg:text-[32px] text-[24px] lg:leading-[14px] leading-[12px] lg:mb-8 mb-4">
           {header1}
         </h1>
         <h1 className="font-redhawk lg:text-[32px] text-[24px] lg:leading-[14px] leading-[12px] mb-8">

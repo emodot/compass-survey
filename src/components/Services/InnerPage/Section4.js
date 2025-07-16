@@ -5,7 +5,7 @@ const Section4 = ({process}) => {
 
   return (
     <div className="pt-[96px] pb-[3rem] bg-[#F0F0F0]">
-      <div className="max-w-[1300px] w-[95%] m-auto lg:flex justify-between">
+      <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto lg:flex justify-between">
         <div className="basis-[42%]">
           <h1 className="font-redhawk lg:text-[32px] text-[24px] lg:leading-[42px] leading-[32px] mb-8 text-[#192F36]">
             Our Process

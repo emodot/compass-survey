@@ -65,7 +65,7 @@ const Header = () => {
       className="absolute w-full py-[20px]"
     >
       <div
-        className={`flex justify-between items-center h-[60px] lg:h-[80px] max-w-[1300px] w-[95%] 2xl:w-full m-auto rounded-[50px] ${
+        className={`flex justify-between items-center h-[60px] lg:h-[80px] max-w-[1300px] lg:w-[95%] w-[90%] 2xl:w-full m-auto rounded-[50px] ${
           lightTheme ? "bg-white" : "backdrop-blur-sm bg-white/10"
         }`}
       >

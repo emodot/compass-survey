@@ -48,7 +48,7 @@ export default function OffshoreProjects() {
   const currentProject = projects[currentIndex];
 
   return (
-    <div className="max-w-[1300px] w-[95%] m-auto">
+    <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto">
       <div className="hidden lg:grid grid-cols-5 h-[600px]">
         <div
           className="bg-cover bg-center col-span-2"

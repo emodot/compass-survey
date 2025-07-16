@@ -50,7 +50,7 @@ const Section3 = ({services}) => {
   };
   return (
     <div className="py-[96px]">
-      <div className="max-w-[1300px] w-[95%] m-auto relative">
+      <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto relative">
         <h1 className="font-redhawk lg:text-[32px] text-[24px] text-center">
           Key Service Features{" "}
         </h1>

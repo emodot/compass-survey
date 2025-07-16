@@ -29,7 +29,7 @@ const OurTeam = () => {
   ];
   return (
     <div className="lg:py-[8rem] py-[4rem] bg-[#F9F8F3]">
-      <div className="max-w-[1300px] w-[95%] m-auto">
+      <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto">
         <div className="pb-[6rem] lg:grid grid-cols-2">
           <div>
             <h1 className="font-redhawk lg:text-[36px] text-[24px] lg:leading-[44px] leading-[32px] mb-4 lg:mb-0">
