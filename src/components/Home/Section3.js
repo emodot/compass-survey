@@ -20,16 +20,16 @@ const Section3 = () => {
   ];
   return (
     <div className="bg-[#EEF9F0]">
-      <div className="max-w-[1300px] w-[95%] m-auto lg:py-[6rem] py-[4rem] grid md:grid-cols-5 grid-cols-1 items-center">
+      <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto lg:py-[6rem] py-[4rem] grid md:grid-cols-5 grid-cols-1 items-center">
         <div className="col-span-1 md:col-span-2">
-          <h1 className="font-redhawk md:text-[32px] text-[24px] leading-[40px] text-brand_primary text-center md:text-left">
+          <h1 className="font-redhawk md:text-[32px] text-[24px] md:leading-[40px] leading-[32px] text-brand_primary text-center md:text-left">
             Meet the future of <br /> Marine Autonomy
           </h1>
-          <div className="lg:mt-[8rem] mt-[4rem]">
+          <div className="lg:mt-[8rem] mt-[3rem]">
             <p className="font-obviously_r text-16 leading-[24px] mb-2 text-brand_primary text-center md:text-left">
               The Compass Surveyor
             </p>
-            <p className="font-redhawk md:text-[45px] text-[32px] leading-[52px] mb-4 text-brand_primary text-center md:text-left">
+            <p className="font-redhawk md:text-[45px] text-[32px] md:leading-[52px] leading-[42px] mb-4 text-brand_primary text-center md:text-left">
               Uncrewed Survey Vehicle (USV)
             </p>
             <p className="font-obviously_r md:text-14 text-12 leading-[24px] md:w-[80%] w-full text-center md:text-left">

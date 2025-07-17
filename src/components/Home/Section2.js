@@ -2,8 +2,8 @@ import Section2BG from "assets/images/home-sec-2-bg.webp";
 import Button from "components/Inputs/Button";
 import { ReactComponent as ArrowRight } from "assets/icons/arrow-right.svg";
 import { useNavigate } from "react-router-dom";
-// import { motion } from "framer-motion";
-// import { fadeIn } from "variants.js";
+import { motion } from "framer-motion";
+import { fadeIn } from "variants.js";
 
 const Section2 = () => {
   const navigate = useNavigate();
@@ -25,36 +25,56 @@ const Section2 = () => {
     },
   ];
   return (
-    <div className="py-[8rem]">
-      <div className="max-w-[1300px] w-[95%] m-auto pb-[6rem] grid lg:grid-cols-2 grid-cols-1">
+    <div className="lg:py-[8rem] py-[4rem]">
+      <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto lg:pb-[6rem] pb-[4rem] grid lg:grid-cols-2 grid-cols-1">
         <div>
-          <h1 className="font-obviously_m lg:text-[24px] text-[20px] mb-6 lg:mb-0 leading-[34px]">
+          <motion.h1
+            className="font-obviously_m lg:text-[24px] text-[20px] mb-6 lg:mb-0 leading-[34px]"
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            animate="show"
+          >
             About Us
-          </h1>
+          </motion.h1>
         </div>
         <div>
-          <p className="font-obviously_r lg:text-[24px] text-[20px] leading-[32px] mb-6">
+          <motion.p
+            className="font-obviously_r lg:text-[24px] text-[20px] leading-[32px] mb-6"
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            animate="show"
+          >
             At Compass Survey, we exist to reshape how Africa explores,
             understands, and manages its marine and terrestrial environments
             through innovative, technology-driven survey solutions.
-          </p>
+          </motion.p>
         </div>
         <div>
-          <p className="font-obviously_r text-14 leading-[24px] lg:w-[60%] w-full  mb-6 lg:mb-0">
+          <motion.p
+            className="font-obviously_r text-14 leading-[24px] lg:w-[60%] w-full  mb-6 lg:mb-0"
+            variants={fadeIn("up", 0.6)}
+            initial="hidden"
+            animate="show"
+          >
             Our purpose is rooted in a commitment to advancing safety,
             efficiency, and sustainability in geospatial operations—delivering
             data that empowers critical decisions, protects ecosystems, and
             drives national development.
-          </p>
+          </motion.p>
         </div>
-        <div className="flex flex-col justify-end h-full w-full">
+        <motion.div
+          className="flex flex-col justify-end h-full w-full"
+          variants={fadeIn("up", 0.8)}
+          initial="hidden"
+          animate="show"
+        >
           <Button
             name={"Learn More"}
             theme={"secondary"}
             arrowIcon={true}
             onClick={() => navigate("/projects")}
           />
-        </div>
+        </motion.div>
       </div>
       <div
         className="max-w-[1300px] m-auto w-full p-[20px] sm:p-[40px]"
@@ -67,14 +87,17 @@ const Section2 = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="pt-[5rem] md:pt-[30rem]">
+        <div className="pt-[5rem] md:pt-[30rem] pb-[5rem] md:pb-0">
           <p className="text-white text-[24px] font-obviously_m mb-6">
             What we do
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {whatWeDo.map((item, index) => (
-              <div
+              <motion.div
                 className="p-6 bg-white/10 hover:bg-white group cursor-pointer backdrop-blur-sm border border-white/30 transition-all duration-500"
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                animate="show"
                 onClick={() => navigate(item.link)}
               >
                 <div className="w-[80%]">
@@ -86,7 +109,7 @@ const Section2 = () => {
                   </p>
                   <ArrowRight />
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

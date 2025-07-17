@@ -31,7 +31,7 @@ const Section2 = () => {
     <div className="pt-[1rem] pb-[8rem] bg-[#F9F8F3]">
       {services.map((item, index) => (
         <div
-          className={`max-w-[1300px] w-[95%] m-auto lg:flex ${
+          className={`max-w-[1300px] lg:w-[95%] w-[90%] m-auto lg:flex ${
             index % 2 === 0 ? "flex-row" : "flex-row-reverse"
           } ${
             index === services.length - 1

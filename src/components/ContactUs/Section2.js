@@ -27,7 +27,7 @@ const Section2 = () => {
   };
   return (
     <div className="lg:mt-[-7rem] mt-[-5rem]">
-      <div className="max-w-[1300px] w-[95%] m-auto lg:px-[4rem] px-[0] lg:pt-[3rem] pt-[2rem] pb-[6rem]">
+      <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto lg:px-[4rem] px-[0] lg:pt-[3rem] pt-[2rem] pb-[6rem]">
         <div className="lg:grid grid-cols-2 gap-[4rem] items-center">
           <div className="bg-[#F9F8F3] lg:p-[3rem] p-[1.5rem]">
             <p className="font-obviously_r lg:text-16 text-[14px] leading-[24px]">

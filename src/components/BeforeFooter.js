@@ -13,7 +13,7 @@ const BeforeFooter = () => {
           <div className="bg-brand_primary text-white px-6 py-16"></div>
           <div className="bg-brand_secondary text-white px-6 py-16"></div>
         </div>
-        <div className="max-w-[1300px] w-[95%] m-auto py-[5rem] grid grid-cols-2 absolute top-0 left-1/2 -translate-x-1/2">
+        <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto py-[5rem] grid grid-cols-2 absolute top-0 left-1/2 -translate-x-1/2">
           <div className="pr-[4rem]">
             <p className="font-obviously_m text-[22px] leading-[32px] xl:w-[60%] lgm:w-[90%] w-[100%] mb-[4rem] text-white">
               Get a closer look at our cutting-edge survey solutions and

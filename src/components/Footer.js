@@ -38,7 +38,7 @@ const Footer = ({ submitEmail }) => {
 
   return (
     <div className="bg-[#F0F0F0]">
-      <div className="max-w-[1300px] w-[95%] m-auto">
+      <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto">
         <div className="lg:pt-[7rem] pt-[4rem] pb-[6rem] lg:grid block grid-cols-2">
           <div>
             <LogoBlack

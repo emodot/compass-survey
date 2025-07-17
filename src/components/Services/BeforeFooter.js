@@ -83,6 +83,7 @@ const BeforeFooter = () => {
             ))}
           </Carousel>
         </div>
+        <div className="lg:block hidden bg-brand_primary"></div>
         <div className="lg:hidden block bg-brand_primary text-white px-6 py-16">
           <div className="pl-[1.5rem]">
             <p className="font-obviously_m text-[22px] leading-[32px] xl:w-[60%] lg:w-[80%] w-[90%] mb-[4rem] text-white">
