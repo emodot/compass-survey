@@ -29,7 +29,7 @@ export const fadeIn = (direction, delay) => {
             y: 0,
             transition: {
               type: "tween",
-              duration: 0.8,
+              duration: 0.4,
               delay: delay,
               ease: easeIn,
             },
@@ -43,7 +43,7 @@ export const fadeIn = (direction, delay) => {
             y: 0,
             transition: {
               type: "tween",
-              duration: 0.8,
+              duration: 0.4,
               delay: delay,
               ease: easeIn,
             },
@@ -57,7 +57,7 @@ export const fadeIn = (direction, delay) => {
             x: 0,
             transition: {
               type: "tween",
-              duration: 0.8,
+              duration: 0.4,
               delay: delay,
               ease: easeIn,
             },
@@ -71,7 +71,7 @@ export const fadeIn = (direction, delay) => {
             x: 0,
             transition: {
               type: "tween",
-              duration: 0.8,
+              duration: 0.4,
               delay: delay,
               ease: easeIn,
             },
@@ -84,7 +84,7 @@ export const fadeIn = (direction, delay) => {
             opacity: 1,
             transition: {
               type: "tween",
-              duration: 0.8,
+              duration: 0.4,
               delay: delay,
               ease: easeIn,
             },

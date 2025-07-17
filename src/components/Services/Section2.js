@@ -3,8 +3,8 @@ import Services2 from "assets/images/services/services-2.webp";
 import Services3 from "assets/images/services/services-3.webp";
 import Button from "components/Inputs/Button";
 import { Link } from "react-router-dom";
-// import { motion } from "framer-motion";
-// import { fadeIn } from "variants.js";
+import { motion } from "framer-motion";
+import { fadeIn } from "variants.js";
 
 const Section2 = () => {
   const services = [
@@ -40,7 +40,11 @@ const Section2 = () => {
           } justify-between items-center lg:py-[6rem] py-[3rem]`}
           key={index}
         >
-          <div
+          <motion.div
+            variants={fadeIn("", 0.2 + index * 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
             className="basis-[48%] lg:h-[25rem] h-[20rem]"
             style={{
               backgroundImage: `url(${item.image})`,
@@ -48,14 +52,26 @@ const Section2 = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
             }}
-          ></div>
+          ></motion.div>
           <div className="basis-[48%] lg:mt-0 mt-5">
-            <h1 className="font-obviously_r lg:text-[28px] text-[18px] lg:leading-[34px] leading-[28px] w-[85%]">
+            <motion.h1
+              variants={fadeIn("up", 0.4 + index * 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="font-obviously_r lg:text-[28px] text-[18px] lg:leading-[34px] leading-[28px] w-[85%]"
+            >
               {item.title}
-            </h1>
-            <p className="font-obviously_r lg:text-[14px] text-[12px] lg:leading-[24px] leading-[20px] text-[#6E6E6E] mb-6 lg:mt-4 mt-2">
+            </motion.h1>
+            <motion.p
+              variants={fadeIn("up", 0.6 + index * 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="font-obviously_r lg:text-[14px] text-[12px] lg:leading-[24px] leading-[20px] text-[#6E6E6E] mb-6 lg:mt-4 mt-2"
+            >
               {item.text}
-            </p>
+            </motion.p>
             <Link to={item.link}>
               <Button
                 name={"Read More"}

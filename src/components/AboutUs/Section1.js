@@ -12,6 +12,7 @@ const Section1 = () => {
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
           >
             We lead with technology, but we build with understanding.
           </motion.h1>
@@ -20,6 +21,7 @@ const Section1 = () => {
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
           >
             We stand at the forefront of Nigeria’s survey industry, pioneering
             the integration of uncrewed survey technologies and innovative
@@ -28,7 +30,11 @@ const Section1 = () => {
           </motion.p>
         </div>
       </div>
-      <div
+      <motion.div
+        variants={fadeIn("", 0.6)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
         className="lg:h-[35rem] h-[25rem]"
         style={{
           // height: "100%",
@@ -38,7 +44,7 @@ const Section1 = () => {
           backgroundPosition: "bottom",
           backgroundRepeat: "no-repeat",
         }}
-      ></div>
+      ></motion.div>
     </div>
   );
 };

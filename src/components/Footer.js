@@ -17,24 +17,24 @@ const Footer = ({ submitEmail }) => {
     setEmailAddress(e.target.value);
   };
 
-    const menuOptions = [
-      {
-        name: "Projects",
-        link: "/projects",
-      },
-      {
-        name: "Services",
-        link: "/services",
-      },
-      {
-        name: "About us",
-        link: "/about-us",
-      },
-      {
-        name: "Blog",
-        link: "/blog",
-      },
-    ];
+  const menuOptions = [
+    {
+      name: "Projects",
+      link: "/projects",
+    },
+    {
+      name: "Services",
+      link: "/services",
+    },
+    {
+      name: "About us",
+      link: "/about-us",
+    },
+    {
+      name: "Blog",
+      link: "/blog",
+    },
+  ];
 
   return (
     <div className="bg-[#F0F0F0]">
