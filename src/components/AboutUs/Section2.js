@@ -1,5 +1,5 @@
-// import { motion } from "framer-motion";
-// import { fadeIn } from "variants.js";
+import { motion } from "framer-motion";
+import { fadeIn } from "variants.js";
 import Section2BG from "assets/images/about-sec-2-bg.webp";
 import { useState } from "react";
 
@@ -11,12 +11,24 @@ const Section2 = () => {
       <div className="lg:py-[8rem] py-[4rem]">
         <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto lg:grid grid-cols-7 gap-6">
           <div className="col-span-2">
-            <h1 className="font-obviously_m lg:text-[22px] text-[20px] lg:leading-[34px] leading-[30px] text-brand_primary mb-4 lg:mb-0">
+            <motion.h1
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="font-obviously_m lg:text-[22px] text-[20px] lg:leading-[34px] leading-[30px] text-brand_primary mb-4 lg:mb-0"
+            >
               About Compass <br /> Survey Limited
-            </h1>
+            </motion.h1>
           </div>
           <div className="col-span-5">
-            <p className="font-obviously_r lg:text-[28px] text-[18px] lg:leading-[38px] leading-[28px] mb-6 text-brand_primary">
+            <motion.p
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="font-obviously_r lg:text-[28px] text-[18px] lg:leading-[38px] leading-[28px] mb-6 text-brand_primary"
+            >
               Compass Survey Limited leads the way in delivering
               precision-driven, locally developed, and tech-enabled survey
               solutions across Africa. We specialize in combining advanced
@@ -25,34 +37,62 @@ const Section2 = () => {
               to transforming how land, marine, and infrastructure surveys are
               conducted—bringing accuracy, efficiency, and reliability to every
               project.
-            </p>
-            <p className="font-obviously_r lg:text-14 text-[12px] lg:leading-[24px] leading-[20px] text-brand_primary">
+            </motion.p>
+            <motion.p
+              variants={fadeIn("up", 0.6)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="font-obviously_r lg:text-14 text-[12px] lg:leading-[24px] leading-[20px] text-brand_primary"
+            >
               Compass Survey Limited delivers precision-driven, locally
               developed, and tech-enabled survey solutions—combining the power
               of uncrewed technology with indigenous innovation to solve complex
               offshore and onshore challenges. We eliminate risk, improve
               efficiency, and deliver real-time, accurate, and actionable data,
               critical for our client’s successful project execution.
-            </p>
+            </motion.p>
           </div>
         </div>
       </div>
       <div className="lg:py-[8rem] py-[4rem] bg-[#F9F8F3]">
         <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto lg:grid grid-cols-5 gap-[5rem]">
           <div className="col-span-2">
-            <h1 className="font-obviously_m lg:text-[22px] text-[16px] lg:leading-[34px] leading-[28px] text-brand_primary lg:mb-6 mb-4">
+            <motion.h1
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="font-obviously_m lg:text-[22px] text-[16px] lg:leading-[34px] leading-[28px] text-brand_primary lg:mb-6 mb-4"
+            >
               Our Story
-            </h1>
-            <h2 className="font-redhawk lg:text-[32px] text-[24px] lg:leading-[40px] leading-[32px] text-brand_primary lg:mb-[3rem] mb-[2rem]">
+            </motion.h1>
+            <motion.h2
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="font-redhawk lg:text-[32px] text-[24px] lg:leading-[40px] leading-[32px] text-brand_primary lg:mb-[3rem] mb-[2rem]"
+            >
               Charting New Paths. <br /> Solving Real Problems.
-            </h2>
-            <img
+            </motion.h2>
+            <motion.img
+              variants={fadeIn("", 0.6)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
               src={Section2BG}
               alt="ships on the sea"
               className="hidden md:block"
             />
           </div>
-          <div className="col-span-3  lg:h-[600px] overflow-y-auto">
+          <motion.div
+            variants={fadeIn("", 0.8)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="col-span-3  lg:h-[600px] overflow-y-auto"
+          >
             <p className="font-obviously_r text-14 leading-[24px] text-brand_primary">
               In the heart of Nigeria’s oil and gas frontier—where rugged
               terrain meets unforgiving waters and where innovation often feels
@@ -142,7 +182,7 @@ const Section2 = () => {
                 Read Less
               </p>
             )}
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

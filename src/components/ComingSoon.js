@@ -10,10 +10,17 @@ const ComingSoon = () => {
         variants={fadeIn("up", 0.2)}
         initial="hidden"
         whileInView="show"
+        viewport={{ once: true }}
       >
         Coming Soon
       </motion.h1>
-      <motion.p className="text-[14px] leading-[24px] text-gray-600 mx-auto text-center">
+      <motion.p
+        variants={fadeIn("up", 0.4)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="text-[14px] leading-[24px] text-gray-600 mx-auto text-center"
+      >
         We're working hard to bring you this page. Stay tuned!
       </motion.p>
     </div>

@@ -1,4 +1,3 @@
-// import Section1BG from "assets/images/contact-sec-1-bg.webp";
 import { ReactComponent as PhoneIcon } from "assets/icons/phone.svg";
 import { ReactComponent as EmailIcon } from "assets/icons/email.svg";
 import { ReactComponent as LocationIcon } from "assets/icons/location-pin.svg";
@@ -9,8 +8,8 @@ import Input from "components/Inputs/Input";
 import { useState } from "react";
 import { DefaultDatepicker } from "components/Inputs/DefaultDatepicker";
 import Button from "components/Inputs/Button";
-// import { motion } from "framer-motion";
-// import { fadeIn } from "variants.js";
+import { motion } from "framer-motion";
+import { fadeIn } from "variants.js";
 
 const Section2 = () => {
   const [formData, setFormData] = useState({
@@ -29,7 +28,13 @@ const Section2 = () => {
     <div className="lg:mt-[-7rem] mt-[-5rem]">
       <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto lg:px-[4rem] px-[0] lg:pt-[3rem] pt-[2rem] pb-[6rem]">
         <div className="lg:grid grid-cols-2 gap-[4rem] items-center">
-          <div className="bg-[#F9F8F3] lg:p-[3rem] p-[1.5rem]">
+          <motion.div
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="bg-[#F9F8F3] lg:p-[3rem] p-[1.5rem]"
+          >
             <p className="font-obviously_r lg:text-16 text-[14px] leading-[24px]">
               Please fill out the form below with your contact details. One of
               our team members will be in touch as soon as possible
@@ -122,19 +127,35 @@ const Section2 = () => {
                 <Button name={"Submit"} theme={"secondary"} arrowIcon={true} />
               </form>
             </div>
-          </div>
+          </motion.div>
           <div className="mt-[4rem] lg:mt-0">
-            <h3 className="font-obviously_m lg:text-[24px] text-[16px] mb-6">
+            <motion.h3
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="font-obviously_m lg:text-[24px] text-[16px] mb-6"
+            >
               Would you prefer to contact us directly?
-            </h3>
+            </motion.h3>
             <div className="mb-[5rem]">
-              <div className="flex items-center gap-6 mb-6">
+              <motion.div
+                variants={fadeIn("up", 0.4)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="flex items-center gap-6 mb-6"
+              >
                 <PhoneIcon className="lg:w-[50px] w-[40px] lg:h-[50px] h-[40px]" />
                 <p className="font-obviously_r text-14 leading-[24px]">
                   +234 806 411 7691
                 </p>
-              </div>
-              <div
+              </motion.div>
+              <motion.div
+                variants={fadeIn("up", 0.6)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
                 className="flex items-center gap-6 mb-6 cursor-pointer"
                 onClick={() => {
                   window.open("mailto:info@compasssurveyltd.com", "_blank");
@@ -144,8 +165,14 @@ const Section2 = () => {
                 <p className="font-obviously_r text-14 leading-[24px]">
                   info@compasssurveyltd.com
                 </p>
-              </div>
-              <div className="flex items-center gap-6 mb-6">
+              </motion.div>
+              <motion.div
+                variants={fadeIn("up", 0.8)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="flex items-center gap-6 mb-6"
+              >
                 <div className="basis-[5%]">
                   <LocationIcon className="lg:w-[50px] w-[40px] lg:h-[50px] h-[40px]" />
                 </div>
@@ -153,15 +180,42 @@ const Section2 = () => {
                   DH03 Rainbow Town Estate Trans Amadi Industrial Layout Port
                   Harcourt, Nigeria
                 </p>
-              </div>
+              </motion.div>
             </div>
-            <p className="font-obviously_m lg:text-[18px] text-[16px] mb-6 lg:w-[50%] w-[80%]">
+            <motion.p
+              variants={fadeIn("up", 1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="font-obviously_m lg:text-[18px] text-[16px] mb-6 lg:w-[50%] w-[80%]"
+            >
               Follow us across our social media platforms
-            </p>
+            </motion.p>
             <div className="flex items-center gap-4">
-              <Twitter className="w-[30px] h-[30px]" />
-              <Instagram className="w-[30px] h-[30px]" />
-              <LinkedIn className="w-[30px] h-[30px]" />
+              <motion.div
+                variants={fadeIn("up", 1.2)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+              >
+                <Twitter className="w-[30px] h-[30px]" />
+              </motion.div>
+              <motion.div
+                variants={fadeIn("up", 1.4)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+              >
+                <Instagram className="w-[30px] h-[30px]" />
+              </motion.div>
+              <motion.div
+                variants={fadeIn("up", 1.6)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+              >
+                <LinkedIn className="w-[30px] h-[30px]" />
+              </motion.div>
             </div>
           </div>
         </div>

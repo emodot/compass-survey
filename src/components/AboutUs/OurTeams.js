@@ -1,7 +1,6 @@
 import TestimonialImage from "assets/images/temp/testimonial-image.webp";
-// import Button from "components/Inputs/Button";
-// import { motion } from "framer-motion";
-// import { fadeIn } from "variants.js";
+import { motion } from "framer-motion";
+import { fadeIn } from "variants.js";
 
 const OurTeam = () => {
   const teamMembers = [
@@ -32,23 +31,39 @@ const OurTeam = () => {
       <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto">
         <div className="pb-[6rem] lg:grid grid-cols-2">
           <div>
-            <h1 className="font-redhawk lg:text-[36px] text-[24px] lg:leading-[44px] leading-[32px] mb-4 lg:mb-0">
+            <motion.h1
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="font-redhawk lg:text-[36px] text-[24px] lg:leading-[44px] leading-[32px] mb-4 lg:mb-0"
+            >
               Our Team
-            </h1>
+            </motion.h1>
           </div>
           <div>
-            <p className="font-obviously_r lg:text-14 text-[12px] lg:leading-[24px] leading-[20px]">
+            <motion.p
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="font-obviously_r lg:text-14 text-[12px] lg:leading-[24px] leading-[20px]"
+            >
               Our strength lies in our people—dedicated survey engineers, GIS
               experts, drone pilots, and analysts working together to deliver
               world-class outcomes. We eliminate risk, improve efficiency, and
               deliver real-time, accurate, and actionable data, critical for our
               client’s successful project execution.
-            </p>
+            </motion.p>
           </div>
         </div>
         <div className="lg:grid grid-cols-3 gap-6 w-full">
           {teamMembers.map((member, index) => (
-            <div
+            <motion.div
+              variants={fadeIn("", 0.2 + index * 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
               key={index}
               className="lg:mb-0 mb-[2rem] col-span-1 p-[2rem] h-[500px] flex items-end relative group"
               style={{
@@ -80,7 +95,7 @@ const OurTeam = () => {
                   {member.title}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

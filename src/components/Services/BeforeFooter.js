@@ -4,9 +4,8 @@ import "react-multi-carousel/lib/styles.css";
 import Services1 from "assets/images/services/services-1.webp";
 import Services2 from "assets/images/services/services-2.webp";
 import Services3 from "assets/images/services/services-3.webp";
-
-// import { motion } from "framer-motion";
-// import { fadeIn } from "variants.js";
+import { motion } from "framer-motion";
+import { fadeIn } from "variants.js";
 
 const BeforeFooter = () => {
   const carouselImages = [
@@ -86,10 +85,16 @@ const BeforeFooter = () => {
         <div className="lg:block hidden bg-brand_primary"></div>
         <div className="lg:hidden block bg-brand_primary text-white px-6 py-16">
           <div className="pl-[1.5rem]">
-            <p className="font-obviously_m text-[22px] leading-[32px] xl:w-[60%] lg:w-[80%] w-[90%] mb-[4rem] text-white">
+            <motion.p
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="font-obviously_m text-[22px] leading-[32px] xl:w-[60%] lg:w-[80%] w-[90%] mb-[4rem] text-white"
+            >
               Ready to experience our services in action? Get in Touch with our
               experts today.
-            </p>
+            </motion.p>
             <Button name={"Contact Us"} theme={"secondary"} arrowIcon={true} />
           </div>
         </div>
@@ -97,10 +102,16 @@ const BeforeFooter = () => {
       <div className="lg:grid hidden max-w-[1300px] m-auto py-[5rem] grid-cols-2 absolute top-0 left-1/2 -translate-x-1/2 w-full">
         <div className="pr-[4rem]"></div>
         <div className="xl:pl-[6rem] lg:pl-[4rem] pl-[2rem]">
-          <p className="font-obviously_m text-[22px] leading-[32px] xl:w-[60%] lg:w-[80%] w-[90%] mb-[4rem] text-white">
+          <motion.p
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="font-obviously_m text-[22px] leading-[32px] xl:w-[60%] lg:w-[80%] w-[90%] mb-[4rem] text-white"
+          >
             Ready to experience our services in action? Get in Touch with our
             experts today.
-          </p>
+          </motion.p>
           <Button name={"Contact Us"} theme={"secondary"} arrowIcon={true} />
         </div>
       </div>
