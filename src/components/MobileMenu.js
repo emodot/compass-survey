@@ -51,7 +51,7 @@ const MobileMenu = () => {
           </p>
         ))}
       </div>
-      <div className="absolute bottom-[4rem] left-[2rem] w-full">
+      <div className="absolute bottom-[15%] left-[2rem] w-full">
         <Button
           name={"Get in Touch"}
           theme={"secondary"}
