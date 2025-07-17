@@ -3,8 +3,8 @@ import Blog2 from "assets/images/temp/blog-2.webp";
 import Blog3 from "assets/images/temp/blog-3.webp";
 import Button from "components/Inputs/Button";
 import { useNavigate } from "react-router-dom";
-// import { motion } from "framer-motion";
-// import { fadeIn } from "variants.js";
+import { motion } from "framer-motion";
+import { fadeIn } from "variants.js";
 
 const NewsBlog = () => {
   const navigate = useNavigate();
@@ -32,12 +32,24 @@ const NewsBlog = () => {
     <div className="">
       <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto pt-[8rem] pb-[6rem]">
         <div>
-          <h1 className="font-obviously_m text-[24px] leading-[32px] mb-[2rem]">
+          <motion.h1
+            className="font-obviously_m text-[24px] leading-[32px] mb-[2rem]"
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
             News / Blog
-          </h1>
+          </motion.h1>
         </div>
         <div className="grid lg:grid-flow-col grid-rows-2 gap-4 mb-[4rem]">
-          <div className="row-span-2 lg:grid grid-cols-2 gap-4 bg-[#EDEEEE]">
+          <motion.div
+            className="row-span-2 lg:grid grid-cols-2 gap-4 bg-[#EDEEEE]"
+            variants={fadeIn("up", 0.6)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
             <div
               style={{ backgroundImage: `url(${blogs[0].image})` }}
               className="bg-cover bg-center h-[400px] lg:h-auto"
@@ -53,15 +65,20 @@ const NewsBlog = () => {
                 name={"Read More"}
                 theme={"full_transparent"}
                 arrowIcon={true}
+                onClick={() => navigate("/blog")}
               />
             </div>
-          </div>
+          </motion.div>
           {blogs
             .filter((blog) => blog.tag !== "main")
             .map((blog, index) => (
-              <div
+              <motion.div
                 key={index}
                 className="col-span-1 grid grid-cols-7 lg:gap-4 gap-2 bg-[#EDEEEE] p-[10px]"
+                variants={fadeIn("up", 0.8 + index * 0.2)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
               >
                 <div
                   style={{ backgroundImage: `url(${blog.image})` }}
@@ -78,18 +95,26 @@ const NewsBlog = () => {
                     name={"Read More"}
                     theme={"full_transparent"}
                     arrowIcon={true}
+                    onClick={() => navigate("/blog")}
                   />
                 </div>
-              </div>
+              </motion.div>
             ))}
         </div>
 
-        <Button
-          name={"See All News"}
-          theme={"transparent"}
-          arrowIcon={true}
-          onClick={() => navigate("/blog")}
-        />
+        <motion.div
+          variants={fadeIn("up", 0.8)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
+          <Button
+            name={"See All News"}
+            theme={"transparent"}
+            arrowIcon={true}
+            onClick={() => navigate("/blog")}
+          />
+        </motion.div>
       </div>
     </div>
   );

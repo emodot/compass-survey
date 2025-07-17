@@ -15,7 +15,8 @@ const Section1 = () => {
             className="font-redhawk text-[45px] lg:text-[50px] lg:leading-[64px] leading-[54px]"
             variants={fadeIn("up", 0.2)}
             initial="hidden"
-            animate="show"
+            whileInView="show"
+            viewport={{ once: true }}
           >
             Innovating Survey Solutions for Africa
           </motion.h1>
@@ -25,7 +26,8 @@ const Section1 = () => {
             className="font-obviously_r text-14 leading-[24px] mb-6"
             variants={fadeIn("up", 0.4)}
             initial="hidden"
-            animate="show"
+            whileInView="show"
+            viewport={{ once: true }}
           >
             We are your innovative, tech-native partner that delivers custom
             solutions using uncrewed survey vehicles and local engineering
@@ -35,7 +37,8 @@ const Section1 = () => {
             className="flex gap-4"
             variants={fadeIn("up", 0.6)}
             initial="hidden"
-            animate="show"
+            whileInView="show"
+            viewport={{ once: true }}
           >
             <Button
               name={"Discover More"}
@@ -52,7 +55,7 @@ const Section1 = () => {
           </motion.div>
         </div>
       </div>
-      <div
+      <motion.div
         className="h-[35rem]"
         style={{
           // height: "100%",
@@ -62,7 +65,11 @@ const Section1 = () => {
           backgroundPosition: "bottom",
           backgroundRepeat: "no-repeat",
         }}
-      ></div>
+        variants={fadeIn("", 0.8)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      ></motion.div>
     </div>
   );
 };

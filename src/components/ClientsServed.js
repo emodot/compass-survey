@@ -121,7 +121,11 @@ const ClientsServed = () => {
           >
             {clientList.map((item, index) => (
               <div key={index} className="pt-[3rem] px-[1rem]">
-                <img src={item.image} alt={item.title} className="h-[70px]" />
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="h-[70px] text-center"
+                />
               </div>
             ))}
           </Carousel>
