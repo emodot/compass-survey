@@ -13,8 +13,8 @@ import {
   // useEffect,
 } from "react";
 import { Outlet } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 
-// import { motion, AnimatePresence } from "framer-motion";
 
 const ModalContext = createContext();
 
@@ -69,7 +69,26 @@ export default function MainLayout() {
               window.scrollTo(0, 0);
             }}
           />
-          {isMenuOpen && <MobileMenu />}
+          <AnimatePresence>
+            {isMenuOpen && (
+              <motion.div
+                initial={{ x: "100%" }}
+                animate={{ x: 0 }}
+                exit={{ x: "100%" }}
+                transition={{ type: "tween", duration: 0.4 }}
+                style={{
+                  position: "fixed",
+                  top: 0,
+                  right: 0,
+                  width: "100vw",
+                  height: "100vh",
+                  zIndex: 50,
+                }}
+              >
+                <MobileMenu />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </Suspense>
       </div>
     </ModalContext.Provider>
