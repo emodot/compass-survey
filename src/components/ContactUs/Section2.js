@@ -68,10 +68,12 @@ const Section2 = () => {
                 />
                 <div className="pt-4">
                   <select
-                    className="w-full border-b border-gray-400 bg-[#00000000] py-2 focus:outline-none text-gray-600"
+                    className="w-full border-b border-gray-400 bg-[#00000000] py-2 focus:outline-none text-gray-600 lg:text-[14px] text-[12px]"
                     value={formData?.service}
                     // defaultValue=""
-                    onChange={handleChange}
+                    onChange={(e) => {
+                      setFormData({ ...formData, service: e.target.value });
+                    }}
                   >
                     <option className="text-[#00000000]" value="" disabled>
                       Which of our services are you interested in?

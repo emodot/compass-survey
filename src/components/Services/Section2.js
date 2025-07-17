@@ -37,7 +37,7 @@ const Section2 = () => {
             index === services.length - 1
               ? ""
               : "lg:border-b border-b-border_stroke_2"
-          } justify-between items-center lg:py-[6rem] py-[4rem]`}
+          } justify-between items-center lg:py-[6rem] py-[3rem]`}
           key={index}
         >
           <div
@@ -49,7 +49,7 @@ const Section2 = () => {
               backgroundPosition: "center",
             }}
           ></div>
-          <div className="basis-[48%] lg:mt-0 mt-4">
+          <div className="basis-[48%] lg:mt-0 mt-5">
             <h1 className="font-obviously_r lg:text-[28px] text-[18px] lg:leading-[34px] leading-[28px] w-[85%]">
               {item.title}
             </h1>

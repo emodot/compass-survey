@@ -32,7 +32,8 @@ const Section2 = () => {
             className="font-obviously_m lg:text-[24px] text-[20px] mb-6 lg:mb-0 leading-[34px]"
             variants={fadeIn("up", 0.2)}
             initial="hidden"
-            animate="show"
+            whileInView="show"
+            viewport={{ once: true }}
           >
             About Us
           </motion.h1>
@@ -42,7 +43,8 @@ const Section2 = () => {
             className="font-obviously_r lg:text-[24px] text-[20px] leading-[32px] mb-6"
             variants={fadeIn("up", 0.4)}
             initial="hidden"
-            animate="show"
+            whileInView="show"
+            viewport={{ once: true }}
           >
             At Compass Survey, we exist to reshape how Africa explores,
             understands, and manages its marine and terrestrial environments
@@ -54,7 +56,8 @@ const Section2 = () => {
             className="font-obviously_r text-14 leading-[24px] lg:w-[60%] w-full  mb-6 lg:mb-0"
             variants={fadeIn("up", 0.6)}
             initial="hidden"
-            animate="show"
+            whileInView="show"
+            viewport={{ once: true }}
           >
             Our purpose is rooted in a commitment to advancing safety,
             efficiency, and sustainability in geospatial operations—delivering
@@ -66,17 +69,18 @@ const Section2 = () => {
           className="flex flex-col justify-end h-full w-full"
           variants={fadeIn("up", 0.8)}
           initial="hidden"
-          animate="show"
+          whileInView="show"
+          viewport={{ once: true }}
         >
           <Button
             name={"Learn More"}
             theme={"secondary"}
             arrowIcon={true}
-            onClick={() => navigate("/projects")}
+            onClick={() => navigate("/about-us")}
           />
         </motion.div>
       </div>
-      <div
+      <motion.div
         className="max-w-[1300px] m-auto w-full p-[20px] sm:p-[40px]"
         style={{
           // height: "100%",
@@ -86,6 +90,10 @@ const Section2 = () => {
           backgroundPosition: "bottom",
           backgroundRepeat: "no-repeat",
         }}
+        variants={fadeIn("up", 0.8)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
       >
         <div className="pt-[5rem] md:pt-[30rem] pb-[5rem] md:pb-0">
           <p className="text-white text-[24px] font-obviously_m mb-6">
@@ -95,10 +103,11 @@ const Section2 = () => {
             {whatWeDo.map((item, index) => (
               <motion.div
                 className="p-6 bg-white/10 hover:bg-white group cursor-pointer backdrop-blur-sm border border-white/30 transition-all duration-500"
-                variants={fadeIn("up", 0.2)}
+                variants={fadeIn("up", 0 + index * 0.2)}
                 initial="hidden"
-                animate="show"
+                whileInView="show"
                 onClick={() => navigate(item.link)}
+                viewport={{ once: true }}
               >
                 <div className="w-[80%]">
                   <p className="text-[18px] font-obviously_m mb-4 text-white group-hover:text-brand_primary transition-colors">
@@ -113,7 +122,7 @@ const Section2 = () => {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

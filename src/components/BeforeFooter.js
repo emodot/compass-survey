@@ -1,8 +1,7 @@
 import Button from "components/Inputs/Button";
 import { useNavigate } from "react-router-dom";
-
-// import { motion } from "framer-motion";
-// import { fadeIn } from "variants.js";
+import { motion } from "framer-motion";
+import { fadeIn } from "variants.js";
 
 const BeforeFooter = () => {
   const navigate = useNavigate();
@@ -15,10 +14,16 @@ const BeforeFooter = () => {
         </div>
         <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto py-[5rem] grid grid-cols-2 absolute top-0 left-1/2 -translate-x-1/2">
           <div className="pr-[4rem]">
-            <p className="font-obviously_m text-[22px] leading-[32px] xl:w-[60%] lgm:w-[90%] w-[100%] mb-[4rem] text-white">
+            <motion.p
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="font-obviously_m text-[22px] leading-[32px] xl:w-[60%] lgm:w-[90%] w-[100%] mb-[4rem] text-white"
+            >
               Get a closer look at our cutting-edge survey solutions and
               real-world project impact.
-            </p>
+            </motion.p>
             <Button
               name={"See What We Do"}
               theme={"secondary_plus"}
@@ -27,10 +32,16 @@ const BeforeFooter = () => {
             />
           </div>
           <div className="xl:pl-[6rem] pl-[2rem]">
-            <p className="font-obviously_m text-[22px] leading-[32px] xl:w-[60%] lgm:w-[90%] w-[100%] mb-[4rem] text-brand_primary">
+            <motion.p
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="font-obviously_m text-[22px] leading-[32px] xl:w-[60%] lgm:w-[90%] w-[100%] mb-[4rem] text-brand_primary"
+            >
               Ready to experience our services in action? Get in Touch with our
               experts today.
-            </p>
+            </motion.p>
             <Button
               name={"Contact Us"}
               theme={"white"}
@@ -42,10 +53,16 @@ const BeforeFooter = () => {
       </div>
       <div className="lg:hidden block">
         <div className="px-6 py-16 bg-brand_primary">
-          <p className="font-obviously_m text-[22px] leading-[32px] xl:w-[60%] lgm:w-[90%] w-[100%] mb-[4rem] text-white">
+          <motion.p
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="font-obviously_m text-[22px] leading-[32px] xl:w-[60%] lgm:w-[90%] w-[100%] mb-[4rem] text-white"
+          >
             Get a closer look at our cutting-edge survey solutions and
             real-world project impact.
-          </p>
+          </motion.p>
           <Button
             name={"See What We Do"}
             theme={"secondary_plus"}
@@ -54,10 +71,16 @@ const BeforeFooter = () => {
           />
         </div>
         <div className="px-6 py-16 bg-brand_secondary">
-          <p className="font-obviously_m text-[22px] leading-[32px] xl:w-[60%] lgm:w-[90%] w-[100%] mb-[4rem] text-brand_primary">
+          <motion.p
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="font-obviously_m text-[22px] leading-[32px] xl:w-[60%] lgm:w-[90%] w-[100%] mb-[4rem] text-brand_primary"
+          >
             Ready to experience our services in action? Get in Touch with our
             experts today.
-          </p>
+          </motion.p>
           <Button
             name={"Contact Us"}
             theme={"white"}
