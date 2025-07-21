@@ -92,7 +92,7 @@ const ClientsServed = () => {
           <Carousel
             additionalTransfrom={0}
             arrows={false}
-            autoPlay={true}
+            autoPlay={false}
             autoPlaySpeed={3000}
             centerMode={false}
             className=""
@@ -124,7 +124,7 @@ const ClientsServed = () => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="h-[70px] text-center"
+                  className="h-[70px] mx-auto"
                 />
               </div>
             ))}

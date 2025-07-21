@@ -66,6 +66,19 @@ body {
   color: black;
 }
 
+.react-multi-carousel-list .react-multi-carousel-dot-list {
+	bottom: 20px
+}
+
+.react-multi-carousel-list .react-multi-carousel-dot button {
+	border: none;
+	background: #ffffff82;
+}
+
+.react-multi-carousel-dot-list .react-multi-carousel-dot--active button{
+	background: white;
+}
+
 
 @keyframes appear {
 	from {
