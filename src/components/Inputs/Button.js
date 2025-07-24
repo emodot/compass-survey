@@ -10,6 +10,7 @@ const Button = ({
   theme,
   disabled,
   arrowIcon = false,
+  textClassName,
 }) => {
   return (
     <button
@@ -33,7 +34,7 @@ const Button = ({
                 }
                 ${
                   theme === "secondary" && !disabled
-                    ? "bg-brand_secondary text-[#192F36] hover:bg-brand_primary"
+                    ? "bg-brand_secondary border border-brand_secondary text-[#192F36] hover:bg-brand_primary"
                     : ""
                 }
                 ${
@@ -77,9 +78,9 @@ const Button = ({
           </g>
         </svg>
       ) : (
-        <div className="flex items-center gap-4">
+        <div className="flex items-center sm:gap-4 gap-3">
           <div
-            className={`pt-[4px] font-obviously_m text-14 transition-all duration-300 ${
+            className={`pt-[4px] font-obviously_m text-14 transition-all duration-300 ${textClassName} ${
               theme === "primary"
                 ? "text-white group-hover:text-brand_primary"
                 : theme === "secondary"
