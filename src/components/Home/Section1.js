@@ -34,7 +34,7 @@ const Section1 = () => {
             insight.
           </motion.p>
           <motion.div
-            className="flex gap-4"
+            className="xs:flex sm:gap-4 gap-2"
             variants={fadeIn("up", 0.6)}
             initial="hidden"
             whileInView="show"
@@ -44,12 +44,16 @@ const Section1 = () => {
               name={"Discover More"}
               theme={"transparent"}
               arrowIcon={true}
+              textClassName="sm:text-14 !text-12"
+              className="w-[170px] xs:w-auto sm:mb-6 mb-2"
               onClick={() => navigate("/about-us")}
             />
             <Button
               name={"Get in Touch"}
               theme={"secondary"}
               arrowIcon={true}
+              textClassName="sm:text-14 !text-12"
+              className="w-[170px] xs:w-auto"
               onClick={() => navigate("/contact-us")}
             />
           </motion.div>
