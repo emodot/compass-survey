@@ -8,8 +8,10 @@ import { useEffect } from "react";
 import ClientsServed from "components/ClientsServed";
 import Section1BG from "assets/images/services/hydrographic-sec-1-bg.webp";
 import Section2BG from "assets/images/services/hydrographic-sec-2-bg.webp";
-import ServicesFeature1 from "assets/images/services/service-feature-1.jpg";
-import ServicesFeature2 from "assets/images/services/service-feature-2.jpg";
+import ServicesFeature1 from "assets/images/services/hydrographic-service-feat-1-bg.webp";
+import ServicesFeature2 from "assets/images/services/hydrographic-service-feat-2-bg.webp";
+import ServicesFeature3 from "assets/images/services/hydrographic-service-feat-3-bg.webp";
+import ServicesFeature4 from "assets/images/services/hydrographic-service-feat-4-bg.webp";
 
 const HydrographicPositioningSurvey = () => {
   useEffect(() => {
@@ -30,12 +32,12 @@ const HydrographicPositioningSurvey = () => {
     {
       title: "Real-Time GNSS & RTK Positioning",
       text: "Delivering accurate location data to support offshore structures, vessels, or construction equipment.",
-      image: ServicesFeature1,
+      image: ServicesFeature3,
     },
     {
       title: "Tidal and Current Monitoring",
       text: "Monitoring marine dynamics for operational safety, environmental studies, and project planning.",
-      image: ServicesFeature2,
+      image: ServicesFeature4,
     },
   ];
 

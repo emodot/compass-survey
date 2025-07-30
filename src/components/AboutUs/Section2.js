@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
-import Section2BG from "assets/images/about-sec-2-bg.webp";
+import Section2BG from "assets/images/about-sec-2-bg.jpg";
 import { useState } from "react";
 
 const Section2 = () => {

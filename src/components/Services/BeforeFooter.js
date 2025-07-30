@@ -1,17 +1,17 @@
 import Button from "components/Inputs/Button";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Services1 from "assets/images/services/services-1.webp";
-import Services2 from "assets/images/services/services-2.webp";
-import Services3 from "assets/images/services/services-3.webp";
+import Carousel1 from "assets/images/services/carousel-image-1.webp";
+import Carousel2 from "assets/images/services/carousel-image-2.webp";
+import Carousel3 from "assets/images/services/carousel-image-3.webp";
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 
 const BeforeFooter = () => {
   const carouselImages = [
-    Services1,
-    Services2,
-    Services3,
+    Carousel1,
+    Carousel2,
+    Carousel3,
   ];
   return (
     <div className="relative lg:h-[400px]">
