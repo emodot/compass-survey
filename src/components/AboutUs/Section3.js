@@ -1,6 +1,8 @@
 import "react-multi-carousel/lib/styles.css";
-import Vision from "assets/images/about-sec-3b.webp";
 import Mission from "assets/images/about-sec-3a.webp";
+import Vision from "assets/images/about-sec-3b.webp";
+import { ReactComponent as MissionIcon } from "assets/icons/mission-icon.svg";
+import { ReactComponent as VisionIcon } from "assets/icons/vision-icon.svg";
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 
@@ -20,14 +22,15 @@ const Section3 = () => {
               style={{
                 backgroundImage: `url(${Mission})`,
                 backgroundSize: "cover",
-                backgroundPosition: "center",
+                backgroundPosition: "top",
                 backgroundRepeat: "no-repeat",
               }}
             ></motion.div>
           </div>
           <div className="max-w-[1300px] m-auto py-[5rem] grid grid-cols-2 absolute top-0 left-1/2 -translate-x-1/2 w-full">
             <div className="pr-[6rem]">
-              <div className="h-[50px] w-[50px] bg-brand_primary rounded-full"></div>
+              {/* <div className="h-[50px] w-[50px] bg-brand_primary rounded-full"></div> */}
+              <MissionIcon />
               <motion.h1
                 variants={fadeIn("up", 0.4)}
                 initial="hidden"
@@ -74,7 +77,8 @@ const Section3 = () => {
           <div className="max-w-[1300px] m-auto py-[5rem] grid grid-cols-2 absolute top-0 left-1/2 -translate-x-1/2 w-full">
             <div className="pr-[4rem]"></div>
             <div className="pl-[6rem]">
-              <div className="h-[50px] w-[50px] bg-brand_secondary rounded-full"></div>
+              {/* <div className="h-[50px] w-[50px] bg-brand_secondary rounded-full"></div> */}
+              <VisionIcon />
               <motion.h1
                 variants={fadeIn("up", 0.4)}
                 initial="hidden"
@@ -112,7 +116,8 @@ const Section3 = () => {
           ></div>
           <div className="py-[2rem] w-full bg-[#97DBA2] px-[2rem]">
             <div className="">
-              <div className="h-[50px] w-[50px] bg-brand_primary rounded-full"></div>
+              {/* <div className="h-[50px] w-[50px] bg-brand_primary rounded-full"></div> */}
+              <MissionIcon />
               <motion.h1
                 variants={fadeIn("up", 0.2)}
                 initial="hidden"
@@ -150,7 +155,8 @@ const Section3 = () => {
           ></div>
           <div className="py-[2rem] w-full bg-brand_primary px-[2rem]">
             <div className="">
-              <div className="h-[50px] w-[50px] bg-brand_secondary rounded-full"></div>
+              {/* <div className="h-[50px] w-[50px] bg-brand_secondary rounded-full"></div> */}
+              <VisionIcon />
               <motion.h1
                 variants={fadeIn("up", 0.2)}
                 initial="hidden"

@@ -6,10 +6,12 @@ import BeforeFooter from "components/Services/BeforeFooter";
 import SEO from "components/SEO";
 import { useEffect } from "react";
 import ClientsServed from "components/ClientsServed";
-import Section1BG from "assets/images/services/hydrographic-sec-1-bg.webp";
-import Section2BG from "assets/images/services/hydrographic-sec-2-bg.webp";
-import ServicesFeature1 from "assets/images/services/service-feature-1.jpg";
-import ServicesFeature2 from "assets/images/services/service-feature-2.jpg";
+import Section1BG from "assets/images/services/high-resolution-sec-1-bg.webp";
+import Section2BG from "assets/images/services/high-resolution-sec-2-bg.webp";
+import ServicesFeature1 from "assets/images/services/high-resolution-service-feat-1-bg.webp";
+import ServicesFeature2 from "assets/images/services/high-resolution-service-feat-2-bg.webp";
+import ServicesFeature3 from "assets/images/services/high-resolution-service-feat-3-bg.webp";
+import ServicesFeature4 from "assets/images/services/high-resolution-service-feat-4-bg.webp";
 
 const HighResolutionGeophysicalSurvey = () => {
   useEffect(() => {
@@ -30,12 +32,12 @@ const HighResolutionGeophysicalSurvey = () => {
     {
       title: "Magnetometer Surveys",
       text: "Detects ferrous objects and potential UXOs—ensuring safe excavation and installation.",
-      image: ServicesFeature1,
+      image: ServicesFeature3,
     },
     {
       title: "Seabed Classification & Interpretation",
       text: "Provides detailed terrain modeling for infrastructure siting, habitat assessment, and geohazard mitigation.",
-      image: ServicesFeature2,
+      image: ServicesFeature4,
     },
   ];
 

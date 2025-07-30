@@ -1,29 +1,39 @@
-import TestimonialImage from "assets/images/temp/testimonial-image.webp";
+import Profile1 from "assets/images/profile1.webp";
+import Profile2 from "assets/images/profile2.webp";
+import Profile3 from "assets/images/profile3.webp";
+import Profile4 from "assets/images/profile4.webp";
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 
 const OurTeam = () => {
   const teamMembers = [
     {
-      name: "James Okoli",
-      title: "Chief Executive Officer",
+      name: "Olusegun Awodiji",
+      title: "Managing Director",
       description:
         "A seasoned geospatial technology expert and the visionary CEO of Compass Survey, a company committed to transforming how terrain-specific challenges across Africa are solved using intelligent, uncrewed survey systems and real-time data platforms.",
-      image: TestimonialImage,
+      image: Profile1,
     },
     {
-      name: "James Okoli",
-      title: "Chief Executive Officer",
+      name: "Joshua Oriero",
+      title: "Business Lead, Autonomous systems",
       description:
         "A seasoned geospatial technology expert and the visionary CEO of Compass Survey, a company committed to transforming how terrain-specific challenges across Africa are solved using intelligent, uncrewed survey systems and real-time data platforms.",
-      image: TestimonialImage,
+      image: Profile2,
     },
     {
-      name: "James Okoli",
-      title: "Chief Executive Officer",
+      name: "Seun Familusi",
+      title: "Operations Manager",
       description:
         "A seasoned geospatial technology expert and the visionary CEO of Compass Survey, a company committed to transforming how terrain-specific challenges across Africa are solved using intelligent, uncrewed survey systems and real-time data platforms.",
-      image: TestimonialImage,
+      image: Profile3,
+    },
+    {
+      name: "Dr. Samuel Nwaka",
+      title: "Financial Controller",
+      description:
+        "A seasoned geospatial technology expert and the visionary CEO of Compass Survey, a company committed to transforming how terrain-specific challenges across Africa are solved using intelligent, uncrewed survey systems and real-time data platforms.",
+      image: Profile4,
     },
   ];
   return (
@@ -57,7 +67,7 @@ const OurTeam = () => {
             </motion.p>
           </div>
         </div>
-        <div className="lg:grid grid-cols-3 gap-6 w-full">
+        <div className="lg:flex gap-6 max-w-[1300px] w-full overflow-x-auto scrollbar-none">
           {teamMembers.map((member, index) => (
             <motion.div
               variants={fadeIn("", 0.2 + index * 0.2)}
@@ -65,7 +75,9 @@ const OurTeam = () => {
               whileInView="show"
               viewport={{ once: true }}
               key={index}
-              className="lg:mb-0 mb-[2rem] col-span-1 p-[2rem] h-[500px] flex items-end relative group"
+              className={`lg:mb-0 mb-[2rem] lg:min-w-[370px] max-w-[370px] flex-shrink-0 p-[2rem] h-[500px] flex items-end relative group ${
+                index !== teamMembers.length - 1 ? "lg:mr-6" : ""
+              }`}
               style={{
                 backgroundImage: `url(${member.image})`,
                 backgroundSize: "cover",
@@ -78,7 +90,7 @@ const OurTeam = () => {
                   <p className="text-[#97DBA2] text-[18px] font-obviously_m mb-2">
                     {member.name}
                   </p>
-                  <p className="text-[#97DBA2] font-obviously_r text-14 leading-[24px]">
+                  <p className="text-[#97DBA2] font-obviously_r text-14 text-center leading-[24px]">
                     {member.title}
                   </p>
                   <hr className="my-6 w-[80%] border-[#F9F8F3]" />

@@ -6,10 +6,12 @@ import BeforeFooter from "components/Services/BeforeFooter";
 import SEO from "components/SEO";
 import { useEffect } from "react";
 import ClientsServed from "components/ClientsServed";
-import Section1BG from "assets/images/services/hydrographic-sec-1-bg.webp";
-import Section2BG from "assets/images/services/hydrographic-sec-2-bg.webp";
-import ServicesFeature1 from "assets/images/services/service-feature-1.jpg";
-import ServicesFeature2 from "assets/images/services/service-feature-2.jpg";
+import Section1BG from "assets/images/services/geotechnical-sec-1-bg.webp";
+import Section2BG from "assets/images/services/geotechnical-sec-2-bg.webp";
+import ServicesFeature1 from "assets/images/services/geotechnical-service-feat-1-bg.webp";
+import ServicesFeature2 from "assets/images/services/geotechnical-service-feat-2-bg.webp";
+import ServicesFeature3 from "assets/images/services/geotechnical-service-feat-3-bg.webp";
+import ServicesFeature4 from "assets/images/services/geotechnical-service-feat-4-bg.webp";
 
 const GeotechnicalSiteInvestigations = () => {
   useEffect(() => {
@@ -30,12 +32,12 @@ const GeotechnicalSiteInvestigations = () => {
       {
         title: "Geotechnical Reporting & Interpretation",
         text: "Actionable reports with soil models, risk zones, and foundation design parameters.",
-        image: ServicesFeature1,
+        image: ServicesFeature3,
       },
       {
         title: "Integration with Geophysical & Hydrographic Data",
         text: "Holistic understanding of ground and seabed conditions through multi-layered data integration.",
-        image: ServicesFeature2,
+        image: ServicesFeature4,
       },
     ];
 
