@@ -102,7 +102,7 @@ const Section2 = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {whatWeDo.map((item, index) => (
               <motion.div
-                className="p-6 bg-white/10 hover:bg-white group cursor-pointer backdrop-blur-sm border border-white/30 transition-all duration-500"
+                className="p-6 bg-white/10 hover:bg-white group cursor-pointer backdrop-blur-lg border border-white/30 transition-all duration-500"
                 variants={fadeIn("up", 0 + index * 0.2)}
                 initial="hidden"
                 whileInView="show"

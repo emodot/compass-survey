@@ -7,6 +7,8 @@ import { fadeIn } from "variants.js";
 
 const Section1 = () => {
   const navigate = useNavigate();
+  const isMobile = window.innerWidth < 768;
+
   return (
     <div className="">
       <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto pt-[13rem] pb-[6rem] grid lg:grid-cols-2 grid-cols-1">
@@ -45,7 +47,7 @@ const Section1 = () => {
               theme={"transparent"}
               arrowIcon={true}
               textClassName="sm:text-14 !text-12"
-              className="w-[170px] xs:w-auto sm:mb-6 mb-2"
+              className="!w-[170px] xs:w-auto sm:mb-6 mb-2"
               onClick={() => navigate("/about-us")}
             />
             <Button
@@ -53,7 +55,7 @@ const Section1 = () => {
               theme={"secondary"}
               arrowIcon={true}
               textClassName="sm:text-14 !text-12"
-              className="w-[170px] xs:w-auto"
+              className="!w-[170px] xs:w-auto"
               onClick={() => navigate("/contact-us")}
             />
           </motion.div>
@@ -66,7 +68,7 @@ const Section1 = () => {
           width: "100%",
           backgroundImage: `url(${Section1BG})`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: `center ${isMobile ? "right 85%" : "center"}`,
           backgroundRepeat: "no-repeat",
         }}
         variants={fadeIn("", 0.8)}

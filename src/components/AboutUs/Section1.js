@@ -41,7 +41,7 @@ const Section1 = () => {
           width: "100%",
           backgroundImage: `url(${Section1BG})`,
           backgroundSize: "cover",
-          backgroundPosition: "bottom",
+          backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       ></motion.div>

@@ -34,7 +34,7 @@ const Button = ({
                 }
                 ${
                   theme === "secondary" && !disabled
-                    ? "bg-brand_secondary border border-brand_secondary text-[#192F36] hover:bg-brand_primary"
+                    ? "bg-brand_secondary text-[#192F36] hover:bg-brand_primary"
                     : ""
                 }
                 ${

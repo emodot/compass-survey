@@ -9,7 +9,7 @@ import { fadeIn } from "variants.js";
 const Section3 = () => {
   return (
     <div>
-      <div className="lg:block hidden">
+      <div className="lg:block hidden max-w-[1300px] m-auto pt-[6rem]">
         <div className="relative h-[450px]">
           <div className="grid grid-cols-2 h-full">
             <div className="bg-[#97DBA2] text-white px-6 py-16"></div>
@@ -28,7 +28,7 @@ const Section3 = () => {
             ></motion.div>
           </div>
           <div className="max-w-[1300px] m-auto py-[5rem] grid grid-cols-2 absolute top-0 left-1/2 -translate-x-1/2 w-full">
-            <div className="pr-[6rem]">
+            <div className="pr-[4rem] pl-[4rem]">
               {/* <div className="h-[50px] w-[50px] bg-brand_primary rounded-full"></div> */}
               <MissionIcon />
               <motion.h1
@@ -68,7 +68,7 @@ const Section3 = () => {
               style={{
                 backgroundImage: `url(${Vision})`,
                 backgroundSize: "cover",
-                backgroundPosition: "center",
+                backgroundPosition: "top",
                 backgroundRepeat: "no-repeat",
               }}
             ></motion.div>
@@ -76,7 +76,7 @@ const Section3 = () => {
           </div>
           <div className="max-w-[1300px] m-auto py-[5rem] grid grid-cols-2 absolute top-0 left-1/2 -translate-x-1/2 w-full">
             <div className="pr-[4rem]"></div>
-            <div className="pl-[6rem]">
+            <div className="pl-[4rem]">
               {/* <div className="h-[50px] w-[50px] bg-brand_secondary rounded-full"></div> */}
               <VisionIcon />
               <motion.h1
@@ -110,7 +110,7 @@ const Section3 = () => {
             style={{
               backgroundImage: `url(${Mission})`,
               backgroundSize: "cover",
-              backgroundPosition: "center",
+              backgroundPosition: "top",
               backgroundRepeat: "no-repeat",
             }}
           ></div>
@@ -149,7 +149,7 @@ const Section3 = () => {
             style={{
               backgroundImage: `url(${Vision})`,
               backgroundSize: "cover",
-              backgroundPosition: "center",
+              backgroundPosition: "top",
               backgroundRepeat: "no-repeat",
             }}
           ></div>
@@ -175,7 +175,7 @@ const Section3 = () => {
               >
                 To build a future where African innovation powers the world’s
                 most advanced survey systems—enabling safer, more efficient, and
-                environmentally responsible exploration on land and sea. 
+                environmentally responsible exploration on land and sea.
               </motion.p>
             </div>
           </div>
