@@ -24,7 +24,7 @@ const BeforeFooter = () => {
             autoPlaySpeed={3000}
             centerMode={false}
             className=""
-            containerClass="container"
+            // containerClass="container"
             dotListClass=""
             draggable
             focusOnSelect={false}
