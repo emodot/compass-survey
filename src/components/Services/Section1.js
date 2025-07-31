@@ -4,7 +4,7 @@ import { fadeIn } from "variants.js";
 
 const Section1 = () => {
   return (
-    <div className="">
+    <div className="pb-[6rem]">
       <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto lg:pt-[13rem] pt-[11rem]">
         <div>
           <motion.h1

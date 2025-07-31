@@ -23,7 +23,7 @@ const OurTeam = () => {
     },
     {
       name: "Seun Familusi",
-      title: "Operations Manager",
+      title: "Director of Operations",
       description:
         "A seasoned geospatial technology expert and the visionary CEO of Compass Survey, a company committed to transforming how terrain-specific challenges across Africa are solved using intelligent, uncrewed survey systems and real-time data platforms.",
       image: Profile3,

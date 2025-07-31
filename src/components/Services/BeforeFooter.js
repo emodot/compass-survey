@@ -112,7 +112,12 @@ const BeforeFooter = () => {
             Ready to experience our services in action? Get in Touch with our
             experts today.
           </motion.p>
-          <Button name={"Contact Us"} theme={"secondary"} arrowIcon={true} />
+          <Button
+            name={"Contact Us"}
+            theme={"secondary"}
+            arrowIcon={true}
+            className="border border-brand_secondary"
+          />
         </div>
       </div>
     </div>
