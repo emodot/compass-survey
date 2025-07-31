@@ -1,8 +1,10 @@
 import Section1BG from "assets/images/contact-sec-1-bg.webp";
+import Section1MobileBG from "assets/images/contact-sec-1-mobile-bg.webp";
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 
 const Section1 = () => {
+  const isMobile = window.innerWidth < 768;
   return (
     <div className="">
       <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto lg:pt-[13rem] pt-[10rem] pb-[4rem]">
@@ -41,7 +43,7 @@ const Section1 = () => {
         style={{
           // height: "100%",
           width: "100%",
-          backgroundImage: `url(${Section1BG})`,
+          backgroundImage: `url(${isMobile ? Section1MobileBG : Section1BG})`,
           backgroundSize: "cover",
           backgroundPosition: "top",
           backgroundRepeat: "no-repeat",
