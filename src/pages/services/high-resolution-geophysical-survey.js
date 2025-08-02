@@ -7,6 +7,7 @@ import SEO from "components/SEO";
 import { useEffect } from "react";
 import ClientsServed from "components/ClientsServed";
 import Section1BG from "assets/images/services/high-resolution-sec-1-bg.webp";
+import Section1MobileBG from "assets/images/services/high-resolution-sec-1-mobile-bg.webp";
 import Section2BG from "assets/images/services/high-resolution-sec-2-bg.webp";
 import ServicesFeature1 from "assets/images/services/high-resolution-service-feat-1-bg.webp";
 import ServicesFeature2 from "assets/images/services/high-resolution-service-feat-2-bg.webp";
@@ -76,6 +77,7 @@ const HighResolutionGeophysicalSurvey = () => {
         title="High Resolution Geophysical Survey"
         text="We map the unseen. Our high-resolution geophysical surveys offer full visibility into seabed and sub-seafloor conditions—supporting safer infrastructure, better design, and smarter decisions."
         image={Section1BG}
+        imageMobile={Section1MobileBG}
       />
       <Section2
         header1="Clarity Below the Surface."

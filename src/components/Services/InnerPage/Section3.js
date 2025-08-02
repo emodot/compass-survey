@@ -121,7 +121,7 @@ const Section3 = ({services}) => {
                   backgroundImage: `url(${item.image})`,
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
+                  backgroundPosition: item.imagePosition || "top",
                 }}
               ></div>
               <div

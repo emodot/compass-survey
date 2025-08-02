@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 
-const Section1 = ({ title, text, image }) => {
+const Section1 = ({ title, text, image, imageMobile }) => {
+  const isMobile = window.innerWidth < 768;
   return (
     <div className="">
       <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto pt-[13rem] pb-[96px]">
@@ -31,13 +32,13 @@ const Section1 = ({ title, text, image }) => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="lg:h-[35rem] h-[25rem]"
+        className="lg:h-[35rem] h-[20rem]"
         style={{
           // height: "100%",
           width: "100%",
-          backgroundImage: `url(${image})`,
+          backgroundImage: `url(${isMobile ? imageMobile : image})`,
           backgroundSize: "cover",
-          backgroundPosition: "bottom",
+          backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       ></motion.div>

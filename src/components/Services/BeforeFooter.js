@@ -4,14 +4,22 @@ import "react-multi-carousel/lib/styles.css";
 import Carousel1 from "assets/images/contact-sec-1-mobile-bg.webp";
 import Carousel2 from "assets/images/services/carousel-image-2.webp";
 import Carousel3 from "assets/images/services/carousel-image-3.webp";
+import CarouselMobile2 from "assets/images/services/carousel-image-mobile-2.jpg";
+import CarouselMobile3 from "assets/images/services/carousel-image-mobile-3.jpg";
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 
 const BeforeFooter = () => {
+  const isMobile = window.innerWidth < 768;
   const carouselImages = [
     Carousel1,
     Carousel2,
     Carousel3,
+  ];
+  const carouselMobileImages = [
+    Carousel1,
+    CarouselMobile2,
+    CarouselMobile3,
   ];
   return (
     <div className="relative lg:h-[400px]">
@@ -68,7 +76,18 @@ const BeforeFooter = () => {
             slidesToSlide={1}
             swipeable={true}
           >
-            {carouselImages.map((item, index) => (
+            {isMobile ? carouselMobileImages.map((item, index) => (
+              <div
+                key={index}
+                className="w-full lg:h-[25rem] h-[20rem]"
+                style={{
+                  backgroundImage: `url(${item})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></div>
+            )) : carouselImages.map((item, index) => (
               <div
                 key={index}
                 className="w-full lg:h-[25rem] h-[20rem]"
