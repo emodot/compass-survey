@@ -7,6 +7,7 @@ import SEO from "components/SEO";
 import { useEffect } from "react";
 import ClientsServed from "components/ClientsServed";
 import Section1BG from "assets/images/services/geotechnical-sec-1-bg.webp";
+import Section1MobileBG from "assets/images/services/geotechnical-sec-1-mobile-bg.webp";
 import Section2BG from "assets/images/services/geotechnical-sec-2-bg.webp";
 import ServicesFeature1 from "assets/images/services/geotechnical-service-feat-1-bg.webp";
 import ServicesFeature2 from "assets/images/services/geotechnical-service-feat-2-bg.webp";
@@ -33,11 +34,13 @@ const GeotechnicalSiteInvestigations = () => {
         title: "Geotechnical Reporting & Interpretation",
         text: "Actionable reports with soil models, risk zones, and foundation design parameters.",
         image: ServicesFeature3,
+        imagePosition: "bottom",
       },
       {
         title: "Integration with Geophysical & Hydrographic Data",
         text: "Holistic understanding of ground and seabed conditions through multi-layered data integration.",
         image: ServicesFeature4,
+        imagePosition: "right",
       },
     ];
 
@@ -75,6 +78,7 @@ const GeotechnicalSiteInvestigations = () => {
         title="Geotechnical Site Investigations"
         text="Our geotechnical services offer insight into the strength, structure, and stability of seabed soils—reducing risk, delays, and design errors."
         image={Section1BG}
+        imageMobile={Section1MobileBG}
       />
       <Section2
         header1="Build on confidence."

@@ -76,6 +76,7 @@ const HydrographicPositioningSurvey = () => {
         title="Hydrographic & Positioning Survey"
         text="Delivering accurate bathymetric and real-time positioning data, even in the most challenging marine environments. Our USV-powered surveys enhance safety, reduce costs, and provide reliable data for critical offshore operations."
         image={Section1BG}
+        imageMobile={Section1BG}
       />
       <Section2
         header1="Built for depth."
