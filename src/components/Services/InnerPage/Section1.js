@@ -32,7 +32,7 @@ const Section1 = ({ title, text, image, imageMobile }) => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="lg:h-[35rem] h-[20rem]"
+        className="lg:h-[35rem] h-[18rem]"
         style={{
           // height: "100%",
           width: "100%",
