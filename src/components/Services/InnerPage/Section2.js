@@ -19,7 +19,7 @@ const Section2 = ({ header1, header2, text1, text2, image }) => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="font-redhawk lg:text-[32px] text-[24px] lg:leading-[14px] leading-[12px] mb-8"
+          className="font-redhawk lg:text-[32px] text-[24px] lg:leading-[14px] leading-[32px] mb-8"
         >
           {header2}
         </motion.h1>
