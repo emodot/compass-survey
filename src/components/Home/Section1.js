@@ -1,4 +1,5 @@
 import Section1BG from "assets/images/home-sec-1-bg.webp";
+import Section1MobileBG from "assets/images/home-sec-1-mobile-bg.webp";
 import Button from "components/Inputs/Button";
 import { useNavigate } from "react-router-dom";
 
@@ -62,11 +63,11 @@ const Section1 = () => {
         </div>
       </div>
       <motion.div
-        className="h-[35rem]"
+        className="lg:h-[35rem] h-[20rem]"
         style={{
           // height: "100%",
           width: "100%",
-          backgroundImage: `url(${Section1BG})`,
+          backgroundImage: `url(${isMobile ? Section1MobileBG : Section1BG})`,
           backgroundSize: "cover",
           backgroundPosition: `center ${isMobile ? "right 85%" : "center"}`,
           backgroundRepeat: "no-repeat",
