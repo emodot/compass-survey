@@ -25,10 +25,10 @@ const Header = () => {
       name: "About us",
       link: "/about-us",
     },
-    {
-      name: "Blog",
-      link: "/blog",
-    },
+    // {
+    //   name: "Blog",
+    //   link: "/blog",
+    // },
   ];
   const navigate = useNavigate();
   const { pathname } = useLocation();

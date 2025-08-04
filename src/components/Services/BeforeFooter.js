@@ -4,8 +4,8 @@ import "react-multi-carousel/lib/styles.css";
 import Carousel1 from "assets/images/contact-sec-1-mobile-bg.webp";
 import Carousel2 from "assets/images/services/carousel-image-2.webp";
 import Carousel3 from "assets/images/services/carousel-image-3.webp";
-import CarouselMobile2 from "assets/images/services/carousel-image-mobile-2.jpg";
-import CarouselMobile3 from "assets/images/services/carousel-image-mobile-3.jpg";
+import CarouselMobile2 from "assets/images/services/carousel-image-mobile-2.webp";
+import CarouselMobile3 from "assets/images/services/carousel-image-mobile-3.webp";
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 

@@ -30,10 +30,10 @@ const Footer = ({ submitEmail }) => {
       name: "About us",
       link: "/about-us",
     },
-    {
-      name: "Blog",
-      link: "/blog",
-    },
+    // {
+    //   name: "Blog",
+    //   link: "/blog",
+    // },
   ];
 
   return (
