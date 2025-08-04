@@ -5,7 +5,7 @@ import Section4 from "components/Home/Section4";
 import SEO from "../components/SEO";
 import { useEffect } from "react";
 import ClientsServed from "components/ClientsServed";
-import NewsBlog from "components/Home/NewsBlog";
+// import NewsBlog from "components/Home/NewsBlog";
 import BeforeFooter from "components/BeforeFooter";
 
 const Home = () => {
@@ -25,7 +25,7 @@ const Home = () => {
       <Section3 />
       <ClientsServed />
       <Section4 />
-      <NewsBlog />
+      {/* <NewsBlog /> */}
       <BeforeFooter />
     </>
   );

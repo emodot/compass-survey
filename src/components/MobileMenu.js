@@ -20,10 +20,10 @@ const MobileMenu = () => {
       name: "About us",
       link: "/about-us",
     },
-    {
-      name: "Blog",
-      link: "/blog",
-    },
+    // {
+    //   name: "Blog",
+    //   link: "/blog",
+    // },
   ];
   return (
     <div className="bg-brand_primary absolute top-0 left-0 w-full h-[100vh] py-[2rem] px-[1rem] z-20">
