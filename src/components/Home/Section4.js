@@ -48,7 +48,7 @@ const Section4 = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[-18rem]">
+      <div className="mt-[-18rem] mb-[6rem]">
         <OffshoreProjects />
       </div>
     </div>

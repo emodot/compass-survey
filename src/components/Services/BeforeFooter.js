@@ -8,6 +8,7 @@ import CarouselMobile2 from "assets/images/services/carousel-image-mobile-2.webp
 import CarouselMobile3 from "assets/images/services/carousel-image-mobile-3.webp";
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
+import { useNavigate } from "react-router-dom";
 
 const BeforeFooter = () => {
   const isMobile = window.innerWidth < 768;
@@ -21,6 +22,7 @@ const BeforeFooter = () => {
     CarouselMobile2,
     CarouselMobile3,
   ];
+  const navigate = useNavigate();
   return (
     <div className="relative lg:h-[400px]">
       <div className="lg:grid grid-cols-2 h-full">
@@ -76,29 +78,31 @@ const BeforeFooter = () => {
             slidesToSlide={1}
             swipeable={true}
           >
-            {isMobile ? carouselMobileImages.map((item, index) => (
-              <div
-                key={index}
-                className="w-full lg:h-[25rem] h-[20rem]"
-                style={{
-                  backgroundImage: `url(${item})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                }}
-              ></div>
-            )) : carouselImages.map((item, index) => (
-              <div
-                key={index}
-                className="w-full lg:h-[25rem] h-[20rem]"
-                style={{
-                  backgroundImage: `url(${item})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                }}
-              ></div>
-            ))}
+            {isMobile
+              ? carouselMobileImages.map((item, index) => (
+                  <div
+                    key={index}
+                    className="w-full lg:h-[25rem] h-[20rem]"
+                    style={{
+                      backgroundImage: `url(${item})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      backgroundRepeat: "no-repeat",
+                    }}
+                  ></div>
+                ))
+              : carouselImages.map((item, index) => (
+                  <div
+                    key={index}
+                    className="w-full lg:h-[25rem] h-[20rem]"
+                    style={{
+                      backgroundImage: `url(${item})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      backgroundRepeat: "no-repeat",
+                    }}
+                  ></div>
+                ))}
           </Carousel>
         </div>
         <div className="lg:block hidden bg-brand_primary"></div>
@@ -114,7 +118,12 @@ const BeforeFooter = () => {
               Ready to experience our services in action? Get in Touch with our
               experts today.
             </motion.p>
-            <Button name={"Contact Us"} theme={"secondary"} arrowIcon={true} />
+            <Button
+              name={"Contact Us"}
+              theme={"secondary"}
+              arrowIcon={true}
+              onClick={() => navigate("/contact-us")}
+            />
           </div>
         </div>
       </div>
@@ -136,6 +145,7 @@ const BeforeFooter = () => {
             theme={"secondary"}
             arrowIcon={true}
             className="border border-brand_secondary"
+            onClick={() => navigate("/contact-us")}
           />
         </div>
       </div>

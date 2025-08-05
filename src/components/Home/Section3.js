@@ -1,5 +1,6 @@
 import Button from "components/Inputs/Button";
 import Section3Image from "assets/images/home-sec-3-ship.webp";
+import Brochure from "assets/docs/Compass Surveyor Brochure.pdf";
 import { motion } from "framer-motion";
 import { fadeIn } from "variants.js";
 
@@ -18,6 +19,14 @@ const Section3 = () => {
       text: "Survey Speed",
     },
   ];
+
+  const brochureUrl =
+    typeof Brochure === "string"
+      ? Brochure
+      : Brochure?.default
+      ? Brochure.default
+      : "";
+
   return (
     <div className="bg-[#EEF9F0]">
       <div className="max-w-[1300px] lg:w-[95%] w-[90%] m-auto lg:py-[6rem] py-[4rem] grid md:grid-cols-5 grid-cols-1 items-center">
@@ -70,11 +79,19 @@ const Section3 = () => {
             whileInView="show"
             viewport={{ once: true }}
           >
-            <Button
-              name={"Download Specification"}
-              theme={"secondary"}
-              arrowIcon={true}
-            />
+            <a
+              href={brochureUrl}
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "inline-block" }}
+            >
+              <Button
+                name={"Download Specification"}
+                theme={"secondary"}
+                arrowIcon={true}
+              />
+            </a>
           </motion.div>
         </div>
         <motion.div
@@ -95,6 +112,7 @@ const Section3 = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true }}
+                key={index}
               >
                 <p className="font-obviously_r text-[44px] text-brand_primary text-center md:text-left">
                   {item.title}
@@ -114,11 +132,19 @@ const Section3 = () => {
         whileInView="show"
         viewport={{ once: true }}
       >
-        <Button
-          name={"Download Specification"}
-          theme={"secondary"}
-          arrowIcon={true}
-        />
+        <a
+          href={brochureUrl}
+          download
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ display: "inline-block" }}
+        >
+          <Button
+            name={"Download Specification"}
+            theme={"secondary"}
+            arrowIcon={true}
+          />
+        </a>
       </motion.div>
     </div>
   );

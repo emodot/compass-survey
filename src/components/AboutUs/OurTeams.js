@@ -85,7 +85,7 @@ const OurTeam = () => {
                 backgroundRepeat: "no-repeat",
               }}
             >
-              <div className="absolute top-0 left-0 w-full h-full p-[2rem] opacity-0 group-hover:opacity-100 transition-all duration-300">
+              {/* <div className="absolute top-0 left-0 w-full h-full p-[2rem] opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <div className="bg-[#053333BF] backdrop-blur-sm p-[2rem] flex flex-col justify-center items-center h-full">
                   <p className="text-[#97DBA2] text-[18px] font-obviously_m mb-2">
                     {member.name}
@@ -98,12 +98,12 @@ const OurTeam = () => {
                     {member.description}
                   </p>
                 </div>
-              </div>
-              <div className="bg-[#ffffffba] backdrop-blur-sm px-6 py-6 w-full group-hover:opacity-0 transition-opacity duration-300">
+              </div> */}
+              <div className="bg-[#ffffffba] backdrop-blur-sm px-6 py-6 w-full group-hover:opacity-100 transition-opacity duration-300">
                 <p className="font-obviously_m text-[17px] leading-[24px] mb-1 text-center">
                   {member.name}
                 </p>
-                <p className="font-obviously_r text-[14px] leading-[24px] text-center">
+                <p className="font-obviously_r text-[12px] leading-[24px] text-center">
                   {member.title}
                 </p>
               </div>
